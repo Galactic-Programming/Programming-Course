@@ -1,0 +1,573 @@
+@page
+@model RazorPagesMovie.Pages.Movies.DetailsModel
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="display-4">
+        <i class="fas fa-info-circle me-2"></i>Movie Details
+    </h1>
+    <div class="btn-group">
+        <a asp-page="./Edit" asp-route-id="@Model.Movie.Id" class="btn btn-warning">
+            <i class="fas fa-edit me-2"></i>Edit
+        </a>
+        <a asp-page="./Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left me-2"></i>Back to List
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Movie Poster and Basic Info -->
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body text-center">
+                @{
+                    bool IsValidImageUrl(string url)
+                    {
+                        if (string.IsNullOrWhiteSpace(url)) return false;
+                        return url.StartsWith("https://", StringComparison.OrdinalIgnoreCase) ||
+                               url.StartsWith("http://", StringComparison.OrdinalIgnoreCase);
+                    }
+                }
+                @if (IsValidImageUrl(Model.Movie.ImageUrl))
+                {
+                    <img src="@Model.Movie.ImageUrl" alt="@Model.Movie.Title" class="img-fluid rounded mb-3" 
+                         style="max-height: 400px; object-fit: cover;" 
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div style="display: none;" class="text-center py-5">
+                        <i class="fas fa-film fa-5x text-muted mb-3"></i>
+                        <p class="text-muted">No poster available</p>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center py-5">
+                        <i class="fas fa-film fa-5x text-muted mb-3"></i>
+                        <p class="text-muted">No poster available</p>
+                    </div>
+                }
+                
+                <h3 class="card-title">@Model.Movie.DisplayTitle</h3>
+                
+                <div class="d-flex justify-content-center gap-2 mb-3">
+                    <span class="badge bg-@Model.Movie.GetRatingColor() fs-6">@Model.Movie.Rating</span>
+                    @if (Model.Movie.IsNewRelease())
+                    {
+                        <span class="badge bg-success fs-6">New Release</span>
+                    }
+                    @if (Model.Movie.IsClassic())
+                    {
+                        <span class="badge bg-warning text-dark fs-6">Classic</span>
+                    }
+                    @if (!Model.Movie.IsAvailable)
+                    {
+                        <span class="badge bg-danger fs-6">Unavailable</span>
+                    }
+                </div>
+
+                @if (Model.Movie.ImdbRating.HasValue)
+                {
+                    <div class="mb-3">
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <strong>@Model.Movie.ImdbRating.Value.ToString("F1")</strong> IMDB Rating
+                    </div>
+                }
+
+                <div class="d-flex justify-content-between text-center">
+                    <div>
+                        <small class="text-muted">Duration</small>
+                        <div><strong>@Model.Movie.GetFormattedDuration()</strong></div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Price</small>
+                        <div><strong>@Model.Movie.Price.ToString("C")</strong></div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Category</small>
+                        <div><strong>@Model.Movie.GetPriceRange()</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Information -->
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">
+                    <i class="fas fa-list me-2"></i>Movie Information
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <!-- Basic Info -->
+                    <div class="col-md-6">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-5">
+                                <i class="fas fa-film me-2"></i>@Html.DisplayNameFor(model => model.Movie.Title)
+                            </dt>
+                            <dd class="col-sm-7">@Html.DisplayFor(model => model.Movie.Title)</dd>
+
+                            <dt class="col-sm-5">
+                                <i class="fas fa-calendar me-2"></i>@Html.DisplayNameFor(model => model.Movie.ReleaseDate)
+                            </dt>
+                            <dd class="col-sm-7">
+                                @Html.DisplayFor(model => model.Movie.ReleaseDate)
+                                <small class="text-muted">(@Model.Movie.MovieAge years ago)</small>
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                <i class="fas fa-tags me-2"></i>@Html.DisplayNameFor(model => model.Movie.Genre)
+                            </dt>
+                            <dd class="col-sm-7">
+                                <span class="badge bg-secondary">@Html.DisplayFor(model => model.Movie.Genre)</span>
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                <i class="fas fa-user-tie me-2"></i>@Html.DisplayNameFor(model => model.Movie.Director)
+                            </dt>
+                            <dd class="col-sm-7">@Html.DisplayFor(model => model.Movie.Director)</dd>
+                        </dl>
+                    </div>
+
+                    <div class="col-md-6">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-5">
+                                <i class="fas fa-language me-2"></i>@Html.DisplayNameFor(model => model.Movie.Language)
+                            </dt>
+                            <dd class="col-sm-7">@Html.DisplayFor(model => model.Movie.Language)</dd>
+
+                            <dt class="col-sm-5">
+                                <i class="fas fa-globe me-2"></i>@Html.DisplayNameFor(model => model.Movie.Country)
+                            </dt>
+                            <dd class="col-sm-7">@Html.DisplayFor(model => model.Movie.Country)</dd>
+
+                            <dt class="col-sm-5">
+                                <i class="fas fa-users me-2"></i>@Html.DisplayNameFor(model => model.Movie.Cast)
+                            </dt>
+                            <dd class="col-sm-7">
+                                @if (!string.IsNullOrEmpty(Model.Movie.Cast))
+                                {
+                                    @Html.DisplayFor(model => model.Movie.Cast)
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Not specified</span>
+                                }
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                <i class="fas fa-check-circle me-2"></i>@Html.DisplayNameFor(model => model.Movie.IsAvailable)
+                            </dt>
+                            <dd class="col-sm-7">
+                                @if (Model.Movie.IsAvailable)
+                                {
+                                    <span class="badge bg-success">Available</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Not Available</span>
+                                }
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                @if (!string.IsNullOrEmpty(Model.Movie.Description))
+                {
+                    <hr class="my-4">
+                    <div>
+                        <h5>
+                            <i class="fas fa-align-left me-2"></i>@Html.DisplayNameFor(model => model.Movie.Description)
+                        </h5>
+                        <p class="text-muted">@Html.DisplayFor(model => model.Movie.Description)</p>
+                    </div>
+                }
+
+                <hr class="my-4">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card bg-light">
+                            <div class="card-body py-3">
+                                <i class="fas fa-calendar-plus fa-2x text-primary mb-2"></i>
+                                <h6 class="card-title">@Html.DisplayNameFor(model => model.Movie.DateAdded)</h6>
+                                <p class="card-text">@Model.Movie.DateAdded.ToString("MMM dd, yyyy")</p>
+                            </div>
+                        </div>
+                    </div>
+                    @if (Model.Movie.LastUpdated.HasValue)
+                    {
+                        <div class="col-md-4">
+                            <div class="card bg-light">
+                                <div class="card-body py-3">
+                                    <i class="fas fa-edit fa-2x text-warning mb-2"></i>
+                                    <h6 class="card-title">@Html.DisplayNameFor(model => model.Movie.LastUpdated)</h6>
+                                    <p class="card-text">@Model.Movie.LastUpdated.Value.ToString("MMM dd, yyyy")</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="col-md-4">
+                        <div class="card bg-light">
+                            <div class="card-body py-3">
+                                <i class="fas fa-birthday-cake fa-2x text-info mb-2"></i>
+                                <h6 class="card-title">Movie Age</h6>
+                                <p class="card-text">@Model.Movie.MovieAge years old</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (User.Identity?.IsAuthenticated == true)
+{
+    <!-- User Actions Section -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-user me-2"></i>Your Actions
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Rating Section -->
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <h6><i class="fas fa-star text-warning me-1"></i>Rate this Movie</h6>
+                                @if (Model.UserRating != null)
+                                {
+                                    <div class="mb-2">
+                                        <strong>Your Rating: @Model.UserRating.Rating/5</strong>
+                                        <div>
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                <i class="fas fa-star @(i <= Model.UserRating.Rating ? "text-warning" : "text-muted")"></i>
+                                            }
+                                        </div>
+                                        <small class="text-muted">Rated on @Model.UserRating.RatedDate.ToString("MMM dd, yyyy")</small>
+                                    </div>
+                                }
+                                
+                                <form method="post" asp-page-handler="Rate" class="d-inline">
+                                    <input type="hidden" name="id" value="@Model.Movie.Id" />
+                                    <div class="rating-input mb-2">
+                                        @for (int i = 1; i <= 5; i++)
+                                        {
+                                            <input type="radio" name="NewRating" value="@i" id="star@(i)" class="d-none" />
+                                            <label for="star@(i)" class="star-label fs-4 text-muted" style="cursor: pointer;">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        }
+                                    </div>
+                                    <button type="submit" class="btn btn-warning btn-sm">
+                                        <i class="fas fa-star me-1"></i>@(Model.UserRating != null ? "Update Rating" : "Rate Movie")
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Favorites Section -->
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <h6><i class="fas fa-heart text-danger me-1"></i>Favorites</h6>
+                                <form method="post" asp-page-handler="ToggleFavorite" class="d-inline">
+                                    <input type="hidden" name="id" value="@Model.Movie.Id" />
+                                    @if (!Model.IsUserFavorite)
+                                    {
+                                        <div class="mb-2">
+                                            <textarea name="FavoriteNotes" placeholder="Notes (optional)" class="form-control form-control-sm mb-2" rows="2"></textarea>
+                                        </div>
+                                    }
+                                    <button type="submit" class="btn @(Model.IsUserFavorite ? "btn-danger" : "btn-outline-danger") btn-sm">
+                                        <i class="fas fa-heart me-1"></i>
+                                        @(Model.IsUserFavorite ? "Remove from Favorites" : "Add to Favorites")
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Watchlist Section -->
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <h6><i class="fas fa-list text-info me-1"></i>Watchlist</h6>
+                                <form method="post" asp-page-handler="ToggleWatchlist" class="d-inline">
+                                    <input type="hidden" name="id" value="@Model.Movie.Id" />
+                                    @if (!Model.IsInWatchlist)
+                                    {
+                                        <div class="mb-2">
+                                            <select name="WatchlistPriority" class="form-select form-select-sm mb-2">
+                                                <option value="Low">Low Priority</option>
+                                                <option value="Medium" selected>Medium Priority</option>
+                                                <option value="High">High Priority</option>
+                                                <option value="Urgent">Urgent</option>
+                                            </select>
+                                            <textarea name="WatchlistNotes" placeholder="Notes (optional)" class="form-control form-control-sm" rows="2"></textarea>
+                                        </div>
+                                    }
+                                    <button type="submit" class="btn @(Model.IsInWatchlist ? "btn-info" : "btn-outline-info") btn-sm">
+                                        <i class="fas fa-list me-1"></i>
+                                        @(Model.IsInWatchlist ? "Remove from Watchlist" : "Add to Watchlist")
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Review Section -->
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <h6><i class="fas fa-comment text-success me-1"></i>Write Review</h6>
+                                @if (Model.UserReview != null)
+                                {
+                                    <div class="alert alert-info py-2 mb-2">
+                                        <small>
+                                            You have a @(Model.UserReview.IsApproved ? "published" : "pending") review
+                                        </small>
+                                    </div>
+                                }
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                                    <i class="fas fa-comment me-1"></i>
+                                    @(Model.UserReview != null ? "Update Review" : "Write Review")
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Ratings & Reviews Section -->
+<div class="row mt-4">
+    <div class="col-md-4">
+        <!-- Rating Statistics -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>User Ratings
+                </h5>
+            </div>
+            <div class="card-body text-center">
+                @if (Model.TotalRatings > 0)
+                {
+                    <div class="mb-3">
+                        <h2 class="display-4 text-warning mb-0">@Model.AverageRating.ToString("F1")</h2>
+                        <div class="mb-2">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                <i class="fas fa-star @(i <= Math.Round(Model.AverageRating) ? "text-warning" : "text-muted")"></i>
+                            }
+                        </div>
+                        <small class="text-muted">Based on @Model.TotalRatings rating(s)</small>
+                    </div>
+                    
+                    <div class="rating-breakdown">
+                        @for (int i = 5; i >= 1; i--)
+                        {
+                            var count = Model.RatingCounts.ContainsKey(i) ? Model.RatingCounts[i] : 0;
+                            var percentage = Model.TotalRatings > 0 ? (count * 100.0 / Model.TotalRatings) : 0;
+                            
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="me-2">@i <i class="fas fa-star text-warning"></i></span>
+                                <div class="progress flex-grow-1 me-2" style="height: 15px;">
+                                    <div class="progress-bar bg-warning" style="width: @(percentage)%"></div>
+                                </div>
+                                <small class="text-muted">@count</small>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center py-4">
+                        <i class="fas fa-star fa-3x text-muted mb-3"></i>
+                        <p class="text-muted">No ratings yet</p>
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <p class="small">Be the first to rate this movie!</p>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <!-- Reviews -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-comments me-2"></i>User Reviews (@Model.Reviews.Count)
+                </h5>
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                        <i class="fas fa-plus me-1"></i>Write Review
+                    </button>
+                }
+            </div>
+            <div class="card-body">
+                @if (Model.Reviews.Any())
+                {
+                    @foreach (var review in Model.Reviews)
+                    {
+                        <div class="review-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <strong>@review.User.UserName</strong>
+                                    @if (review.Rating != null)
+                                    {
+                                        <span class="ms-2">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                <i class="fas fa-star @(i <= review.Rating.Rating ? "text-warning" : "text-muted") small"></i>
+                                            }
+                                        </span>
+                                    }
+                                </div>
+                                <small class="text-muted">@review.ReviewDate.ToString("MMM dd, yyyy")</small>
+                            </div>
+                            <p class="mb-2">@review.Content</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    @if (User.Identity?.IsAuthenticated == true)
+                                    {
+                                        <form method="post" asp-page-handler="Helpful" class="d-inline">
+                                            <input type="hidden" name="reviewId" value="@review.Id" />
+                                            <input type="hidden" name="isHelpful" value="true" />
+                                            <button type="submit" class="btn btn-link btn-sm p-0 me-2">
+                                                <i class="fas fa-thumbs-up text-success"></i> Helpful
+                                            </button>
+                                        </form>
+                                    }
+                                    @if (review.HelpfulVotes > 0)
+                                    {
+                                        <small class="text-muted">@review.HelpfulVotes people found this helpful</small>
+                                    }
+                                </div>
+                                @if (review.LastUpdated.HasValue)
+                                {
+                                    <small class="text-muted">Updated: @review.LastUpdated.Value.ToString("MMM dd, yyyy")</small>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="text-center py-4">
+                        <i class="fas fa-comments fa-3x text-muted mb-3"></i>
+                        <p class="text-muted">No reviews yet</p>
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <p class="small">Be the first to review this movie!</p>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (User.Identity?.IsAuthenticated == true)
+{
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form method="post" asp-page-handler="Review">
+                    <input type="hidden" name="id" value="@Model.Movie.Id" />
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="reviewModalLabel">
+                            @(Model.UserReview != null ? "Update Your Review" : "Write a Review")
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="ReviewContent" class="form-label">Your Review</label>
+                            <textarea name="ReviewContent" id="ReviewContent" class="form-control" rows="6" 
+                                      placeholder="Share your thoughts about this movie..." required>@(Model.UserReview?.Content ?? "")</textarea>
+                            <div class="form-text">Reviews are subject to approval before being published.</div>
+                        </div>
+                        @if (Model.UserRating != null)
+                        {
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Your review will be linked to your @Model.UserRating.Rating-star rating.
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                Consider rating this movie first to provide more context for your review.
+                            </div>
+                        }
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save me-1"></i>
+                            @(Model.UserReview != null ? "Update Review" : "Submit Review")
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .rating-input .star-label:hover,
+    .rating-input .star-label:hover ~ .star-label {
+        color: #ffc107 !important;
+    }
+    
+    .rating-input input:checked ~ .star-label,
+    .rating-input input:checked ~ .star-label ~ .star-label {
+        color: #ffc107 !important;
+    }
+    
+    .review-item:last-child {
+        border-bottom: none !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+</style>
+
+<script>
+    // Rating system interactivity
+    document.querySelectorAll('.star-label').forEach(label => {
+        label.addEventListener('mouseover', function() {
+            const rating = this.previousElementSibling.value;
+            updateStarDisplay(rating);
+        });
+    });
+
+    document.querySelector('.rating-input')?.addEventListener('mouseleave', function() {
+        const checkedInput = this.querySelector('input:checked');
+        const rating = checkedInput ? checkedInput.value : 0;
+        updateStarDisplay(rating);
+    });
+
+    function updateStarDisplay(rating) {
+        document.querySelectorAll('.star-label').forEach((label, index) => {
+            const star = label.querySelector('i');
+            if (index < rating) {
+                star.className = 'fas fa-star text-warning';
+            } else {
+                star.className = 'fas fa-star text-muted';
+            }
+        });
+    }
+</script>

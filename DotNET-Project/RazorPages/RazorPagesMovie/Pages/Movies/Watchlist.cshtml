@@ -1,0 +1,235 @@
+@page
+@using RazorPagesMovie.Models
+@model RazorPagesMovie.Pages.Movies.WatchlistModel
+@{
+    ViewData["Title"] = "My Watchlist";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="display-4">
+        <i class="fas fa-list text-info me-2"></i>My Watchlist
+    </h1>
+    <a asp-page="./Index" class="btn btn-secondary">
+        <i class="fas fa-arrow-left me-2"></i>Back to Movies
+    </a>
+</div>
+
+<!-- Filter Tabs -->
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <div class="btn-group" role="group">
+                    <a asp-page="./Watchlist" asp-route-filterBy="all" 
+                       class="btn @(Model.FilterBy == "all" ? "btn-info" : "btn-outline-info")">
+                        <i class="fas fa-list me-1"></i>All (@(Model.UnwatchedCount + Model.WatchedCount))
+                    </a>
+                    <a asp-page="./Watchlist" asp-route-filterBy="unwatched" 
+                       class="btn @(Model.FilterBy == "unwatched" ? "btn-warning" : "btn-outline-warning")">
+                        <i class="fas fa-clock me-1"></i>To Watch (@Model.UnwatchedCount)
+                    </a>
+                    <a asp-page="./Watchlist" asp-route-filterBy="watched" 
+                       class="btn @(Model.FilterBy == "watched" ? "btn-success" : "btn-outline-success")">
+                        <i class="fas fa-check me-1"></i>Watched (@Model.WatchedCount)
+                    </a>
+                    <a asp-page="./Watchlist" asp-route-filterBy="high" 
+                       class="btn @(Model.FilterBy == "high" ? "btn-danger" : "btn-outline-danger")">
+                        <i class="fas fa-exclamation me-1"></i>High Priority
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-end">
+                <div class="progress" style="height: 20px;">
+                    @{
+                        var totalItems = Model.UnwatchedCount + Model.WatchedCount;
+                        var watchedPercentage = totalItems > 0 ? (Model.WatchedCount * 100.0 / totalItems) : 0;
+                    }
+                    <div class="progress-bar bg-success" style="width: @(watchedPercentage)%">
+                        @if (watchedPercentage > 0)
+                        {
+                            <span>@watchedPercentage.ToString("F0")% Complete</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.WatchlistItems.Any())
+{
+    <div class="row">
+        @foreach (var item in Model.WatchlistItems)
+        {
+            var priorityClass = item.Priority switch
+            {
+                WatchlistPriority.Urgent => "border-danger",
+                WatchlistPriority.High => "border-warning",
+                WatchlistPriority.Medium => "border-info",
+                WatchlistPriority.Low => "border-secondary",
+                _ => "border-secondary"
+            };
+
+            var priorityBadge = item.Priority switch
+            {
+                WatchlistPriority.Urgent => "bg-danger",
+                WatchlistPriority.High => "bg-warning text-dark",
+                WatchlistPriority.Medium => "bg-info",
+                WatchlistPriority.Low => "bg-secondary",
+                _ => "bg-secondary"
+            };
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 @priorityClass @(item.IsWatched ? "opacity-75" : "")">
+                    <div class="position-relative">
+                        @if (!string.IsNullOrEmpty(item.Movie.ImageUrl))
+                        {
+                            <img src="@item.Movie.ImageUrl" alt="@item.Movie.Title" 
+                                 class="card-img-top" style="height: 300px; object-fit: cover;"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div style="display: none;" class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 300px;">
+                                <i class="fas fa-film fa-5x text-muted"></i>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 300px;">
+                                <i class="fas fa-film fa-5x text-muted"></i>
+                            </div>
+                        }
+                        
+                        <!-- Priority badge -->
+                        <div class="position-absolute top-0 start-0 p-2">
+                            <span class="badge @priorityBadge">@item.Priority</span>
+                        </div>
+                        
+                        <!-- Action buttons -->
+                        <div class="position-absolute top-0 end-0 p-2">
+                            <div class="btn-group-vertical">
+                                <form method="post" asp-page-handler="MarkWatched" class="d-inline">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    <input type="hidden" name="filterBy" value="@Model.FilterBy" />
+                                    <button type="submit" class="btn @(item.IsWatched ? "btn-warning" : "btn-success") btn-sm mb-1" 
+                                            title="@(item.IsWatched ? "Mark as unwatched" : "Mark as watched")">
+                                        <i class="fas @(item.IsWatched ? "fa-undo" : "fa-check")"></i>
+                                    </button>
+                                </form>
+                                <form method="post" asp-page-handler="Remove" class="d-inline">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    <input type="hidden" name="filterBy" value="@Model.FilterBy" />
+                                    <button type="submit" class="btn btn-danger btn-sm" 
+                                            onclick="return confirm('Remove from watchlist?')"
+                                            title="Remove from watchlist">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        @if (item.IsWatched)
+                        {
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                                <span class="badge bg-success fs-6">
+                                    <i class="fas fa-check me-1"></i>Watched
+                                </span>
+                            </div>
+                        }
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title @(item.IsWatched ? "text-decoration-line-through" : "")">
+                            @item.Movie.Title
+                        </h5>
+                        
+                        <div class="mb-2">
+                            <span class="badge bg-@item.Movie.GetRatingColor()">@item.Movie.Rating</span>
+                            <span class="badge bg-secondary">@item.Movie.Genre</span>
+                            @if (item.Movie.IsNewRelease())
+                            {
+                                <span class="badge bg-success">New</span>
+                            }
+                        </div>
+                        
+                        <p class="card-text text-muted small">
+                            <i class="fas fa-calendar me-1"></i>@item.Movie.ReleaseDate.ToString("yyyy")
+                            <i class="fas fa-clock ms-2 me-1"></i>@item.Movie.GetFormattedDuration()
+                            <i class="fas fa-dollar-sign ms-2 me-1"></i>@item.Movie.Price.ToString("C")
+                        </p>
+                        
+                        @if (!string.IsNullOrEmpty(item.Notes))
+                        {
+                            <div class="mt-2">
+                                <small class="text-muted">
+                                    <i class="fas fa-sticky-note me-1"></i>Your Notes:
+                                </small>
+                                <p class="small fst-italic">@item.Notes</p>
+                            </div>
+                        }
+                        
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-plus me-1"></i>Added on @item.AddedDate.ToString("MMM dd, yyyy")
+                                @if (item.IsWatched && item.WatchedDate.HasValue)
+                                {
+                                    <br />
+                                    <i class="fas fa-check me-1"></i>@($"Watched: {item.WatchedDate.Value:MMM dd, yyyy}")
+                                }
+                            </small>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="d-flex gap-2">
+                            <a asp-page="./Details" asp-route-id="@item.Movie.Id" class="btn btn-primary btn-sm flex-grow-1">
+                                <i class="fas fa-info-circle me-1"></i>Details
+                            </a>
+                            <a asp-page="./Edit" asp-route-id="@item.Movie.Id" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="fas fa-list fa-5x text-muted mb-4"></i>
+        <h3 class="text-muted">
+            @switch (Model.FilterBy)
+            {
+                case "watched":
+                    <span>No Watched Movies</span>
+                    break;
+                case "unwatched":
+                    <span>No Movies To Watch</span>
+                    break;
+                case "high":
+                    <span>No High Priority Movies</span>
+                    break;
+                default:
+                    <span>No Movies in Watchlist</span>
+                    break;
+            }
+        </h3>
+        <p class="lead text-muted mb-4">
+            @switch (Model.FilterBy)
+            {
+                case "watched":
+                    <span>Mark movies as watched from your watchlist to see them here.</span>
+                    break;
+                case "high":
+                    <span>Add movies with High or Must Watch priority to see them here.</span>
+                    break;
+                default:
+                    <span>Start building your watchlist by adding movies from the details pages.</span>
+                    break;
+            }
+        </p>
+        <a asp-page="./Index" class="btn btn-primary">
+            <i class="fas fa-film me-2"></i>Browse Movies
+        </a>
+    </div>
+}

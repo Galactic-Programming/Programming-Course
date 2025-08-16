@@ -1,0 +1,111 @@
+@page
+@model RazorPagesMovie.Pages.Movies.FavoritesModel
+@{
+    ViewData["Title"] = "My Favorites";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="display-4">
+        <i class="fas fa-heart text-danger me-2"></i>My Favorite Movies
+    </h1>
+    <a asp-page="./Index" class="btn btn-secondary">
+        <i class="fas fa-arrow-left me-2"></i>Back to Movies
+    </a>
+</div>
+
+@if (Model.Favorites.Any())
+{
+    <div class="row">
+        @foreach (var favorite in Model.Favorites)
+        {
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        @if (!string.IsNullOrEmpty(favorite.Movie.ImageUrl))
+                        {
+                            <img src="@favorite.Movie.ImageUrl" alt="@favorite.Movie.Title" 
+                                 class="card-img-top" style="height: 300px; object-fit: cover;"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div style="display: none;" class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 300px;">
+                                <i class="fas fa-film fa-5x text-muted"></i>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 300px;">
+                                <i class="fas fa-film fa-5x text-muted"></i>
+                            </div>
+                        }
+                        
+                        <div class="position-absolute top-0 end-0 p-2">
+                            <form method="post" asp-page-handler="Remove" class="d-inline">
+                                <input type="hidden" name="id" value="@favorite.Id" />
+                                <button type="submit" class="btn btn-danger btn-sm" 
+                                        onclick="return confirm('Remove from favorites?')">
+                                    <i class="fas fa-heart-broken"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">@favorite.Movie.Title</h5>
+                        
+                        <div class="mb-2">
+                            <span class="badge bg-@favorite.Movie.GetRatingColor()">@favorite.Movie.Rating</span>
+                            <span class="badge bg-secondary">@favorite.Movie.Genre</span>
+                            @if (favorite.Movie.IsNewRelease())
+                            {
+                                <span class="badge bg-success">New</span>
+                            }
+                        </div>
+                        
+                        <p class="card-text text-muted small">
+                            <i class="fas fa-calendar me-1"></i>@favorite.Movie.ReleaseDate.ToString("yyyy")
+                            <i class="fas fa-clock ms-2 me-1"></i>@favorite.Movie.GetFormattedDuration()
+                            <i class="fas fa-dollar-sign ms-2 me-1"></i>@favorite.Movie.Price.ToString("C")
+                        </p>
+                        
+                        @if (!string.IsNullOrEmpty(favorite.Notes))
+                        {
+                            <div class="mt-2">
+                                <small class="text-muted">
+                                    <i class="fas fa-sticky-note me-1"></i>Your Notes:
+                                </small>
+                                <p class="small fst-italic">@favorite.Notes</p>
+                            </div>
+                        }
+                        
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-heart me-1"></i>Added on @favorite.AddedDate.ToString("MMM dd, yyyy")
+                            </small>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="d-flex gap-2">
+                            <a asp-page="./Details" asp-route-id="@favorite.Movie.Id" class="btn btn-primary btn-sm flex-grow-1">
+                                <i class="fas fa-info-circle me-1"></i>Details
+                            </a>
+                            <a asp-page="./Edit" asp-route-id="@favorite.Movie.Id" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="fas fa-heart fa-5x text-muted mb-4"></i>
+        <h3 class="text-muted">No Favorite Movies Yet</h3>
+        <p class="lead text-muted mb-4">Start adding movies to your favorites by clicking the heart icon on movie details pages.</p>
+        <a asp-page="./Index" class="btn btn-primary">
+            <i class="fas fa-film me-2"></i>Browse Movies
+        </a>
+    </div>
+}

@@ -1,0 +1,182 @@
+@page
+@model RazorPagesMovie.Pages.Movies.CreateModel
+
+@{
+    ViewData["Title"] = "Add New Movie";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="display-4">
+        <i class="fas fa-plus-circle me-2"></i>Add New Movie
+    </h1>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">Movie Information</h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                    
+                    <!-- Basic Information -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-8">
+                            <label asp-for="Movie.Title" class="form-label">
+                                <i class="fas fa-film me-2"></i>@Html.DisplayNameFor(m => m.Movie.Title)
+                            </label>
+                            <input asp-for="Movie.Title" class="form-control form-control-lg" placeholder="Enter movie title..." />
+                            <span asp-validation-for="Movie.Title" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-4">
+                            <label asp-for="Movie.ReleaseDate" class="form-label">
+                                <i class="fas fa-calendar me-2"></i>@Html.DisplayNameFor(m => m.Movie.ReleaseDate)
+                            </label>
+                            <input asp-for="Movie.ReleaseDate" class="form-control" type="date" />
+                            <span asp-validation-for="Movie.ReleaseDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label asp-for="Movie.Genre" class="form-label">
+                                <i class="fas fa-tags me-2"></i>@Html.DisplayNameFor(m => m.Movie.Genre)
+                            </label>
+                            <input asp-for="Movie.Genre" class="form-control" placeholder="e.g., Action, Drama, Comedy..." />
+                            <span asp-validation-for="Movie.Genre" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Movie.Rating" class="form-label">
+                                <i class="fas fa-certificate me-2"></i>@Html.DisplayNameFor(m => m.Movie.Rating)
+                            </label>
+                            <select asp-for="Movie.Rating" class="form-select">
+                                <option value="">Select Rating</option>
+                                <option value="G">G</option>
+                                <option value="PG">PG</option>
+                                <option value="PG-13">PG-13</option>
+                                <option value="R">R</option>
+                                <option value="NC-17">NC-17</option>
+                            </select>
+                            <span asp-validation-for="Movie.Rating" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Movie.Price" class="form-label">
+                                <i class="fas fa-dollar-sign me-2"></i>@Html.DisplayNameFor(m => m.Movie.Price)
+                            </label>
+                            <input asp-for="Movie.Price" class="form-control" step="0.01" placeholder="0.00" />
+                            <span asp-validation-for="Movie.Price" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Additional Details -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label asp-for="Movie.Director" class="form-label">
+                                <i class="fas fa-user-tie me-2"></i>@Html.DisplayNameFor(m => m.Movie.Director)
+                            </label>
+                            <input asp-for="Movie.Director" class="form-control" placeholder="Director name..." />
+                            <span asp-validation-for="Movie.Director" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Movie.Duration" class="form-label">
+                                <i class="fas fa-clock me-2"></i>@Html.DisplayNameFor(m => m.Movie.Duration)
+                            </label>
+                            <input asp-for="Movie.Duration" class="form-control" placeholder="120" />
+                            <span asp-validation-for="Movie.Duration" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Movie.ImdbRating" class="form-label">
+                                <i class="fas fa-star me-2"></i>@Html.DisplayNameFor(m => m.Movie.ImdbRating)
+                            </label>
+                            <input asp-for="Movie.ImdbRating" class="form-control" step="0.1" placeholder="7.5" />
+                            <span asp-validation-for="Movie.ImdbRating" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label asp-for="Movie.Language" class="form-label">
+                                <i class="fas fa-language me-2"></i>@Html.DisplayNameFor(m => m.Movie.Language)
+                            </label>
+                            <input asp-for="Movie.Language" class="form-control" placeholder="English" />
+                            <span asp-validation-for="Movie.Language" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="Movie.Country" class="form-label">
+                                <i class="fas fa-globe me-2"></i>@Html.DisplayNameFor(m => m.Movie.Country)
+                            </label>
+                            <input asp-for="Movie.Country" class="form-control" placeholder="Country of origin..." />
+                            <span asp-validation-for="Movie.Country" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Movie.Cast" class="form-label">
+                            <i class="fas fa-users me-2"></i>@Html.DisplayNameFor(m => m.Movie.Cast)
+                        </label>
+                        <input asp-for="Movie.Cast" class="form-control" placeholder="Main cast members..." />
+                        <span asp-validation-for="Movie.Cast" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Movie.Description" class="form-label">
+                            <i class="fas fa-align-left me-2"></i>@Html.DisplayNameFor(m => m.Movie.Description)
+                        </label>
+                        <textarea asp-for="Movie.Description" class="form-control" rows="4" placeholder="Movie description..."></textarea>
+                        <span asp-validation-for="Movie.Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Movie.ImageUrl" class="form-label">
+                            <i class="fas fa-image me-2"></i>@Html.DisplayNameFor(m => m.Movie.ImageUrl)
+                        </label>
+                        <input asp-for="Movie.ImageUrl" class="form-control" placeholder="https://example.com/poster.jpg" />
+                        <span asp-validation-for="Movie.ImageUrl" class="text-danger"></span>
+                        <div class="form-text">Optional: URL to movie poster image</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input asp-for="Movie.IsAvailable" class="form-check-input" />
+                            <label asp-for="Movie.IsAvailable" class="form-check-label">
+                                <i class="fas fa-check-circle me-2"></i>@Html.DisplayNameFor(m => m.Movie.IsAvailable)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-success btn-lg">
+                            <i class="fas fa-save me-2"></i>Create Movie
+                        </button>
+                        <a asp-page="Index" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-arrow-left me-2"></i>Back to List
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Preview Panel -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-eye me-2"></i>Preview
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">Fill out the form to see a preview of your movie entry.</p>
+                <div class="text-center">
+                    <i class="fas fa-film fa-3x text-muted"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

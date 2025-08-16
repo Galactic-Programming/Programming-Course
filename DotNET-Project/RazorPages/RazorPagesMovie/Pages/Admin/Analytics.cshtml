@@ -1,0 +1,435 @@
+@page
+@model RazorPagesMovie.Pages.Admin.AnalyticsModel
+@{
+    ViewData["Title"] = "Analytics Dashboard";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="display-4">
+        <i class="fas fa-chart-line text-primary me-2"></i>Analytics Dashboard
+    </h1>
+    <div class="btn-group">
+        <a asp-page="/Movies/Index" class="btn btn-secondary">
+            <i class="fas fa-film me-2"></i>Movies
+        </a>
+        <a asp-page="/Admin/Users" class="btn btn-info">
+            <i class="fas fa-users me-2"></i>Users
+        </a>
+    </div>
+</div>
+
+<!-- Overview Statistics Cards -->
+<div class="row mb-4">
+    <div class="col-md-2">
+        <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+                <i class="fas fa-film fa-2x mb-2"></i>
+                <h3 class="card-title">@Model.TotalMovies</h3>
+                <p class="card-text">Total Movies</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card text-center bg-success text-white">
+            <div class="card-body">
+                <i class="fas fa-users fa-2x mb-2"></i>
+                <h3 class="card-title">@Model.TotalUsers</h3>
+                <p class="card-text">Total Users</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card text-center bg-warning text-white">
+            <div class="card-body">
+                <i class="fas fa-star fa-2x mb-2"></i>
+                <h3 class="card-title">@Model.TotalRatings</h3>
+                <p class="card-text">Total Ratings</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card text-center bg-info text-white">
+            <div class="card-body">
+                <i class="fas fa-comment fa-2x mb-2"></i>
+                <h3 class="card-title">@Model.TotalReviews</h3>
+                <p class="card-text">Total Reviews</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card text-center bg-danger text-white">
+            <div class="card-body">
+                <i class="fas fa-heart fa-2x mb-2"></i>
+                <h3 class="card-title">@Model.TotalFavorites</h3>
+                <p class="card-text">Total Favorites</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card text-center bg-dark text-white">
+            <div class="card-body">
+                <i class="fas fa-user-check fa-2x mb-2"></i>
+                <h3 class="card-title">@Model.ActiveUsers</h3>
+                <p class="card-text">Active Users<br><small>(30 days)</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Charts Row -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-line me-2"></i>Activity Over Time
+                </h5>
+            </div>
+            <div class="card-body">
+                <canvas id="activityChart" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-pie me-2"></i>Rating Distribution
+                </h5>
+            </div>
+            <div class="card-body">
+                <canvas id="ratingChart" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Movies Section -->
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-trophy text-warning me-2"></i>Top Rated Movies
+                </h5>
+            </div>
+            <div class="card-body">
+                @if (Model.TopRatedMovies.Any())
+                {
+                    @foreach (var movie in Model.TopRatedMovies.Take(5))
+                    {
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                @if (!string.IsNullOrEmpty(movie.ImageUrl))
+                                {
+                                    <img src="@movie.ImageUrl" alt="@movie.Title" class="rounded" 
+                                         style="width: 50px; height: 75px; object-fit: cover;">
+                                }
+                                else
+                                {
+                                    <div class="bg-light rounded d-flex align-items-center justify-content-center" 
+                                         style="width: 50px; height: 75px;">
+                                        <i class="fas fa-film text-muted"></i>
+                                    </div>
+                                }
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1">
+                                    <a asp-page="/Movies/Details" asp-route-id="@movie.Id" class="text-decoration-none">
+                                        @movie.Title
+                                    </a>
+                                </h6>
+                                <div class="small text-muted">
+                                    <i class="fas fa-star text-warning"></i> @movie.AverageRating.ToString("F1")
+                                    <span class="ms-2">(@movie.Count ratings)</span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted text-center">No rated movies yet</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-comments text-info me-2"></i>Most Reviewed Movies
+                </h5>
+            </div>
+            <div class="card-body">
+                @if (Model.MostReviewedMovies.Any())
+                {
+                    @foreach (var movie in Model.MostReviewedMovies.Take(5))
+                    {
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                @if (!string.IsNullOrEmpty(movie.ImageUrl))
+                                {
+                                    <img src="@movie.ImageUrl" alt="@movie.Title" class="rounded" 
+                                         style="width: 50px; height: 75px; object-fit: cover;">
+                                }
+                                else
+                                {
+                                    <div class="bg-light rounded d-flex align-items-center justify-content-center" 
+                                         style="width: 50px; height: 75px;">
+                                        <i class="fas fa-film text-muted"></i>
+                                    </div>
+                                }
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1">
+                                    <a asp-page="/Movies/Details" asp-route-id="@movie.Id" class="text-decoration-none">
+                                        @movie.Title
+                                    </a>
+                                </h6>
+                                <div class="small text-muted">
+                                    <i class="fas fa-comment text-info"></i> @movie.Count reviews
+                                    @if (movie.AverageRating > 0)
+                                    {
+                                        <span class="ms-2">
+                                            <i class="fas fa-star text-warning"></i> @movie.AverageRating.ToString("F1")
+                                        </span>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted text-center">No reviewed movies yet</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-heart text-danger me-2"></i>Most Favorited Movies
+                </h5>
+            </div>
+            <div class="card-body">
+                @if (Model.MostFavoritedMovies.Any())
+                {
+                    @foreach (var movie in Model.MostFavoritedMovies.Take(5))
+                    {
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                @if (!string.IsNullOrEmpty(movie.ImageUrl))
+                                {
+                                    <img src="@movie.ImageUrl" alt="@movie.Title" class="rounded" 
+                                         style="width: 50px; height: 75px; object-fit: cover;">
+                                }
+                                else
+                                {
+                                    <div class="bg-light rounded d-flex align-items-center justify-content-center" 
+                                         style="width: 50px; height: 75px;">
+                                        <i class="fas fa-film text-muted"></i>
+                                    </div>
+                                }
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1">
+                                    <a asp-page="/Movies/Details" asp-route-id="@movie.Id" class="text-decoration-none">
+                                        @movie.Title
+                                    </a>
+                                </h6>
+                                <div class="small text-muted">
+                                    <i class="fas fa-heart text-danger"></i> @movie.Count favorites
+                                    @if (movie.AverageRating > 0)
+                                    {
+                                        <span class="ms-2">
+                                            <i class="fas fa-star text-warning"></i> @movie.AverageRating.ToString("F1")
+                                        </span>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted text-center">No favorited movies yet</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Genre Statistics -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-tags me-2"></i>Genre Statistics
+                </h5>
+            </div>
+            <div class="card-body">
+                @if (Model.GenreStats.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Genre</th>
+                                    <th>Movies</th>
+                                    <th>Total Ratings</th>
+                                    <th>Avg Rating</th>
+                                    <th>Reviews</th>
+                                    <th>Favorites</th>
+                                    <th>Popularity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var genre in Model.GenreStats)
+                                {
+                                    var totalEngagement = genre.TotalRatings + genre.TotalReviews + genre.TotalFavorites;
+                                    var maxEngagement = Model.GenreStats.Max(g => g.TotalRatings + g.TotalReviews + g.TotalFavorites);
+                                    var popularityPercentage = maxEngagement > 0 ? (totalEngagement * 100.0 / maxEngagement) : 0;
+                                    
+                                    <tr>
+                                        <td>
+                                            <span class="badge bg-secondary">@genre.Genre</span>
+                                        </td>
+                                        <td>@genre.MovieCount</td>
+                                        <td>@genre.TotalRatings</td>
+                                        <td>
+                                            @if (genre.AverageRating > 0)
+                                            {
+                                                <span class="text-warning">
+                                                    <i class="fas fa-star"></i> @genre.AverageRating.ToString("F1")
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted">No ratings</span>
+                                            }
+                                        </td>
+                                        <td>@genre.TotalReviews</td>
+                                        <td>@genre.TotalFavorites</td>
+                                        <td>
+                                            <div class="progress" style="height: 20px;">
+                                                <div class="progress-bar bg-info" style="width: @(popularityPercentage)%">
+                                                    @if (popularityPercentage > 15)
+                                                    {
+                                                        <span>@totalEngagement</span>
+                                                    }
+                                                </div>
+                                            </div>
+                                            @if (popularityPercentage <= 15)
+                                            {
+                                                <small class="text-muted">@totalEngagement total</small>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted text-center">No genre data available</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chart.js Integration -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Activity Over Time Chart
+    const activityCtx = document.getElementById('activityChart').getContext('2d');
+    const activityChart = new Chart(activityCtx, {
+        type: 'line',
+        data: {
+            labels: @Html.Raw(Json.Serialize(Model.RatingsOverTime.Select(r => r.Label))),
+            datasets: [
+                {
+                    label: 'Ratings',
+                    data: @Html.Raw(Json.Serialize(Model.RatingsOverTime.Select(r => r.Value))),
+                    borderColor: '#ffc107',
+                    backgroundColor: 'rgba(255, 193, 7, 0.1)',
+                    tension: 0.4
+                },
+                {
+                    label: 'Reviews',
+                    data: @Html.Raw(Json.Serialize(Model.ReviewsOverTime.Select(r => r.Value))),
+                    borderColor: '#17a2b8',
+                    backgroundColor: 'rgba(23, 162, 184, 0.1)',
+                    tension: 0.4
+                },
+                {
+                    label: 'New Users',
+                    data: @Html.Raw(Json.Serialize(Model.UsersOverTime.Select(u => u.Value))),
+                    borderColor: '#28a745',
+                    backgroundColor: 'rgba(40, 167, 69, 0.1)',
+                    tension: 0.4
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Activity Trends (Last 6 Months)'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Rating Distribution Chart
+    const ratingCtx = document.getElementById('ratingChart').getContext('2d');
+    const ratingChart = new Chart(ratingCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['1 Star', '2 Stars', '3 Stars', '4 Stars', '5 Stars'],
+            datasets: [{
+                data: [
+                    @(Model.RatingDistribution.ContainsKey(1) ? Model.RatingDistribution[1] : 0),
+                    @(Model.RatingDistribution.ContainsKey(2) ? Model.RatingDistribution[2] : 0),
+                    @(Model.RatingDistribution.ContainsKey(3) ? Model.RatingDistribution[3] : 0),
+                    @(Model.RatingDistribution.ContainsKey(4) ? Model.RatingDistribution[4] : 0),
+                    @(Model.RatingDistribution.ContainsKey(5) ? Model.RatingDistribution[5] : 0)
+                ],
+                backgroundColor: [
+                    '#dc3545',
+                    '#fd7e14',
+                    '#ffc107',
+                    '#20c997',
+                    '#28a745'
+                ]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Rating Distribution'
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }
+    });
+</script>

@@ -1,0 +1,917 @@
+@page
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Movie Library";
+}
+
+<!-- Hidden elements for toast notification data -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div data-success-message="@TempData["SuccessMessage"]" style="display: none;"></div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div data-error-message="@TempData["ErrorMessage"]" style="display: none;"></div>
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="display-4">
+        <i class="fas fa-film me-2"></i>Movie Library
+    </h1>
+    <a asp-page="Create" class="btn btn-primary btn-lg">
+        <i class="fas fa-plus me-2"></i>Add New Movie
+    </a>
+</div>
+
+<!-- Statistics Dashboard -->
+@if (string.IsNullOrEmpty(Model.SearchString) && string.IsNullOrEmpty(Model.MovieGenre) && string.IsNullOrEmpty(Model.MovieRating))
+{
+    <div class="row mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-film fa-3x me-3 opacity-75"></i>
+                        <div>
+                            <h3 class="card-title mb-1">@Model.TotalMovies</h3>
+                            <p class="card-text mb-0">Total Movies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card bg-success text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x me-3 opacity-75"></i>
+                        <div>
+                            <h3 class="card-title mb-1">@Model.AveragePrice.ToString("C")</h3>
+                            <p class="card-text mb-0">Average Price</p>
+                            <small class="opacity-75">Total: @Model.TotalValue.ToString("C")</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card bg-info text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-tags fa-3x me-3 opacity-75"></i>
+                        <div>
+                            <h3 class="card-title mb-1">@Model.MostPopularGenre</h3>
+                            <p class="card-text mb-0">Popular Genre</p>
+                            <small class="opacity-75">@Model.TotalGenres total genres</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card bg-warning text-dark h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-star fa-3x me-3 opacity-75"></i>
+                        <div>
+                            @if (Model.HighestRatedMovie != null)
+                            {
+                                <h3 class="card-title mb-1">@Model.HighestRatedMovie.ImdbRating?.ToString("F1")</h3>
+                                <p class="card-text mb-0">Top Rated</p>
+                                <small class="opacity-75">@Model.HighestRatedMovie.Title</small>
+                            }
+                            else
+                            {
+                                <h3 class="card-title mb-1">N/A</h3>
+                                <p class="card-text mb-0">Top Rated</p>
+                                <small class="opacity-75">No ratings yet</small>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Stats Row -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card border-left-primary h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-calendar-plus fa-2x text-primary mb-2"></i>
+                    <h5 class="card-title">Latest Addition</h5>
+                    @if (Model.NewestMovie != null)
+                    {
+                        <p class="card-text">
+                            <strong>@Model.NewestMovie.Title</strong><br>
+                            <small class="text-muted">Added @Model.NewestMovie.DateAdded.ToString("MMM dd, yyyy")</small>
+                        </p>
+                    }
+                    else
+                    {
+                        <p class="card-text text-muted">No movies added yet</p>
+                    }
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card border-left-success h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-fire fa-2x text-success mb-2"></i>
+                    <h5 class="card-title">New Releases</h5>
+                    <p class="card-text">
+                        <strong>@Model.NewReleasesCount</strong> movies<br>
+                        <small class="text-muted">Released in last 2 years</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card border-left-info h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-chart-line fa-2x text-info mb-2"></i>
+                    <h5 class="card-title">Collection Value</h5>
+                    <p class="card-text">
+                        <strong>@Model.TotalValue.ToString("C")</strong><br>
+                        <small class="text-muted">Total collection worth</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Advanced Search and Filter Form -->
+<!-- Add anti-forgery token for JS POST operations -->
+<form id="antiForgeryForm" method="post" style="display:none;">
+    @Html.AntiForgeryToken()
+</form>
+<div class="card mb-4">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">
+                <i class="fas fa-search me-2"></i>Advanced Search & Filters
+            </h5>
+            <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#advancedSearch" aria-expanded="false">
+                <i class="fas fa-sliders-h me-2"></i>Toggle Advanced
+            </button>
+        </div>
+    </div>
+    <div class="card-body">
+        <form method="get" class="row g-3">
+            <!-- Basic Search Row -->
+            <div class="col-md-4">
+                <label for="SearchString" class="form-label">Search by Title/Director</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <input type="text" asp-for="SearchString" class="form-control" placeholder="Enter movie title or director...">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="MovieGenre" class="form-label">Genre</label>
+                <select asp-for="MovieGenre" asp-items="Model.Genres" class="form-select">
+                    <option value="">All Genres</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="MovieRating" class="form-label">Rating</label>
+                <select asp-for="MovieRating" asp-items="Model.Ratings" class="form-select">
+                    <option value="">All Ratings</option>
+                </select>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <div class="d-grid gap-2 w-100">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search me-2"></i>Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Advanced Filters (Collapsible) -->
+            <div class="collapse" id="advancedSearch">
+                <hr class="my-3">
+                <div class="row g-3">
+                    <!-- Director Search -->
+                    <div class="col-md-4">
+                        <label for="Director" class="form-label">Director</label>
+                        <input type="text" asp-for="Director" class="form-control" placeholder="Search by director name...">
+                    </div>
+
+                    <!-- Year Range -->
+                    <div class="col-md-4">
+                        <label class="form-label">Release Year Range</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="number" asp-for="YearFrom" class="form-control" placeholder="From" min="1900" max="2030">
+                            </div>
+                            <div class="col-6">
+                                <input type="number" asp-for="YearTo" class="form-control" placeholder="To" min="1900" max="2030">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Range -->
+                    <div class="col-md-4">
+                        <label class="form-label">Price Range ($)</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="number" asp-for="PriceFrom" class="form-control" placeholder="Min" min="0" step="0.01">
+                            </div>
+                            <div class="col-6">
+                                <input type="number" asp-for="PriceTo" class="form-control" placeholder="Max" min="0" step="0.01">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMDB Rating -->
+                    <div class="col-md-3">
+                        <label for="MinRating" class="form-label">Min IMDB Rating</label>
+                        <select asp-for="MinRating" class="form-select">
+                            <option value="">Any Rating</option>
+                            <option value="1">1.0+</option>
+                            <option value="2">2.0+</option>
+                            <option value="3">3.0+</option>
+                            <option value="4">4.0+</option>
+                            <option value="5">5.0+</option>
+                            <option value="6">6.0+</option>
+                            <option value="7">7.0+</option>
+                            <option value="8">8.0+</option>
+                            <option value="9">9.0+</option>
+                        </select>
+                    </div>
+
+                    <!-- Language -->
+                    <div class="col-md-3">
+                        <label for="Language" class="form-label">Language</label>
+                        <input type="text" asp-for="Language" class="form-control" placeholder="e.g., English, Spanish...">
+                    </div>
+
+                    <!-- Country -->
+                    <div class="col-md-3">
+                        <label for="Country" class="form-label">Country</label>
+                        <input type="text" asp-for="Country" class="form-control" placeholder="e.g., USA, UK...">
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="col-md-3">
+                        <label for="IsAvailable" class="form-label">Availability</label>
+                        <select asp-for="IsAvailable" class="form-select">
+                            <option value="">All Movies</option>
+                            <option value="true">Available Only</option>
+                            <option value="false">Unavailable Only</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clear Filters Button -->
+            @if (!string.IsNullOrEmpty(Model.SearchString) || !string.IsNullOrEmpty(Model.MovieGenre) || 
+                 !string.IsNullOrEmpty(Model.MovieRating) || !string.IsNullOrEmpty(Model.Director) ||
+                 Model.YearFrom.HasValue || Model.YearTo.HasValue || Model.PriceFrom.HasValue || 
+                 Model.PriceTo.HasValue || Model.MinRating.HasValue || !string.IsNullOrEmpty(Model.Language) ||
+                 !string.IsNullOrEmpty(Model.Country) || Model.IsAvailable.HasValue)
+            {
+                <div class="col-12 text-center mt-3">
+                    <a href="/Movies" class="btn btn-outline-secondary">
+                        <i class="fas fa-times me-2"></i>Clear All Filters
+                    </a>
+                </div>
+            }
+        </form>
+    </div>
+</div>
+
+<!-- Movie Results Count & Pagination Info -->
+@if (Model.Movie.Any())
+{
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <div class="alert alert-info mb-0">
+                <i class="fas fa-info-circle me-2"></i>
+                Showing <strong>@Model.Movie.Count</strong> movie(s) 
+                @if (Model.TotalPages > 1)
+                {
+                    <span>(Page @Model.PageNumber of @Model.TotalPages)</span>
+                }
+                @if (!string.IsNullOrEmpty(Model.SearchString) || !string.IsNullOrEmpty(Model.MovieGenre) || 
+                     !string.IsNullOrEmpty(Model.MovieRating) || !string.IsNullOrEmpty(Model.Director) ||
+                     Model.YearFrom.HasValue || Model.YearTo.HasValue || Model.PriceFrom.HasValue || 
+                     Model.PriceTo.HasValue || Model.MinRating.HasValue || !string.IsNullOrEmpty(Model.Language) ||
+                     !string.IsNullOrEmpty(Model.Country) || Model.IsAvailable.HasValue)
+                {
+                    <span>matching your criteria</span>
+                }
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex gap-2 justify-content-end">
+                <button type="button" class="btn btn-outline-info btn-sm" onclick="selectAll()">
+                    <i class="fas fa-check-square me-2"></i>Select All
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="clearSelection()">
+                    <i class="fas fa-square me-2"></i>Clear
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-download me-2"></i>Export
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="exportSelected('csv')">
+                            <i class="fas fa-file-csv me-2"></i>Export to CSV
+                        </a></li>
+                        <li><a class="dropdown-item" href="#" onclick="exportAll('csv')">
+                            <i class="fas fa-download me-2"></i>Export All
+                        </a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-danger btn-sm" onclick="deleteSelected()" style="display: none;" id="deleteSelectedBtn">
+                    <i class="fas fa-trash me-2"></i>Delete Selected
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Enhanced Movie Table -->
+<div class="card">
+    <div class="card-body p-0">
+        @if (Model.Movie.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col" style="width: 50px;">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="selectAllCheck" onchange="toggleAll(this)">
+                                    <label class="form-check-label text-white" for="selectAllCheck"></label>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <a asp-page="./Index" asp-route-sortOrder="@(ViewData["TitleSort"])" 
+                                   asp-route-searchString="@Model.SearchString" 
+                                   asp-route-movieGenre="@Model.MovieGenre"
+                                   asp-route-movieRating="@Model.MovieRating"
+                                   asp-route-director="@Model.Director"
+                                   asp-route-yearFrom="@Model.YearFrom"
+                                   asp-route-yearTo="@Model.YearTo"
+                                   asp-route-priceFrom="@Model.PriceFrom"
+                                   asp-route-priceTo="@Model.PriceTo"
+                                   asp-route-minRating="@Model.MinRating"
+                                   asp-route-language="@Model.Language"
+                                   asp-route-country="@Model.Country"
+                                   asp-route-isAvailable="@Model.IsAvailable"
+                                   asp-route-pageNumber="@Model.PageNumber"
+                                   class="text-white text-decoration-none">
+                                    @Html.DisplayNameFor(model => model.Movie[0].Title)
+                                    <i class="fas fa-sort ms-1"></i>
+                                </a>
+                            </th>
+                            <th scope="col">
+                                <a asp-page="./Index" asp-route-sortOrder="@(ViewData["DateSort"])" 
+                                   asp-route-searchString="@Model.SearchString" 
+                                   asp-route-movieGenre="@Model.MovieGenre"
+                                   asp-route-movieRating="@Model.MovieRating"
+                                   asp-route-director="@Model.Director"
+                                   asp-route-yearFrom="@Model.YearFrom"
+                                   asp-route-yearTo="@Model.YearTo"
+                                   asp-route-priceFrom="@Model.PriceFrom"
+                                   asp-route-priceTo="@Model.PriceTo"
+                                   asp-route-minRating="@Model.MinRating"
+                                   asp-route-language="@Model.Language"
+                                   asp-route-country="@Model.Country"
+                                   asp-route-isAvailable="@Model.IsAvailable"
+                                   asp-route-pageNumber="@Model.PageNumber"
+                                   class="text-white text-decoration-none">
+                                    @Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
+                                    <i class="fas fa-sort ms-1"></i>
+                                </a>
+                            </th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.Movie[0].Genre)</th>
+                            <th scope="col">
+                                <a asp-page="./Index" asp-route-sortOrder="@(ViewData["DirectorSort"])" 
+                                   asp-route-searchString="@Model.SearchString" 
+                                   asp-route-movieGenre="@Model.MovieGenre"
+                                   asp-route-movieRating="@Model.MovieRating"
+                                   asp-route-director="@Model.Director"
+                                   asp-route-yearFrom="@Model.YearFrom"
+                                   asp-route-yearTo="@Model.YearTo"
+                                   asp-route-priceFrom="@Model.PriceFrom"
+                                   asp-route-priceTo="@Model.PriceTo"
+                                   asp-route-minRating="@Model.MinRating"
+                                   asp-route-language="@Model.Language"
+                                   asp-route-country="@Model.Country"
+                                   asp-route-isAvailable="@Model.IsAvailable"
+                                   asp-route-pageNumber="@Model.PageNumber"
+                                   class="text-white text-decoration-none">
+                                    @Html.DisplayNameFor(model => model.Movie[0].Director)
+                                    <i class="fas fa-sort ms-1"></i>
+                                </a>
+                            </th>
+                            <th scope="col">
+                                <a asp-page="./Index" asp-route-sortOrder="@(ViewData["PriceSort"])" 
+                                   asp-route-searchString="@Model.SearchString" 
+                                   asp-route-movieGenre="@Model.MovieGenre"
+                                   asp-route-movieRating="@Model.MovieRating"
+                                   asp-route-director="@Model.Director"
+                                   asp-route-yearFrom="@Model.YearFrom"
+                                   asp-route-yearTo="@Model.YearTo"
+                                   asp-route-priceFrom="@Model.PriceFrom"
+                                   asp-route-priceTo="@Model.PriceTo"
+                                   asp-route-minRating="@Model.MinRating"
+                                   asp-route-language="@Model.Language"
+                                   asp-route-country="@Model.Country"
+                                   asp-route-isAvailable="@Model.IsAvailable"
+                                   asp-route-pageNumber="@Model.PageNumber"
+                                   class="text-white text-decoration-none">
+                                    @Html.DisplayNameFor(model => model.Movie[0].Price)
+                                    <i class="fas fa-sort ms-1"></i>
+                                </a>
+                            </th>
+                            <th scope="col">
+                                <a asp-page="./Index" asp-route-sortOrder="@(ViewData["RatingSort"])" 
+                                   asp-route-searchString="@Model.SearchString" 
+                                   asp-route-movieGenre="@Model.MovieGenre"
+                                   asp-route-movieRating="@Model.MovieRating"
+                                   asp-route-director="@Model.Director"
+                                   asp-route-yearFrom="@Model.YearFrom"
+                                   asp-route-yearTo="@Model.YearTo"
+                                   asp-route-priceFrom="@Model.PriceFrom"
+                                   asp-route-priceTo="@Model.PriceTo"
+                                   asp-route-minRating="@Model.MinRating"
+                                   asp-route-language="@Model.Language"
+                                   asp-route-country="@Model.Country"
+                                   asp-route-isAvailable="@Model.IsAvailable"
+                                   asp-route-pageNumber="@Model.PageNumber"
+                                   class="text-white text-decoration-none">
+                                    @Html.DisplayNameFor(model => model.Movie[0].Rating)
+                                    <i class="fas fa-sort ms-1"></i>
+                                </a>
+                            </th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">
+                                <a asp-page="./Index" asp-route-sortOrder="@(ViewData["ImdbSort"])" 
+                                   asp-route-searchString="@Model.SearchString" 
+                                   asp-route-movieGenre="@Model.MovieGenre"
+                                   asp-route-movieRating="@Model.MovieRating"
+                                   asp-route-director="@Model.Director"
+                                   asp-route-yearFrom="@Model.YearFrom"
+                                   asp-route-yearTo="@Model.YearTo"
+                                   asp-route-priceFrom="@Model.PriceFrom"
+                                   asp-route-priceTo="@Model.PriceTo"
+                                   asp-route-minRating="@Model.MinRating"
+                                   asp-route-language="@Model.Language"
+                                   asp-route-country="@Model.Country"
+                                   asp-route-isAvailable="@Model.IsAvailable"
+                                   asp-route-pageNumber="@Model.PageNumber"
+                                   class="text-white text-decoration-none">
+                                    IMDB
+                                    <i class="fas fa-sort ms-1"></i>
+                                </a>
+                            </th>
+                            <th scope="col" class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Movie)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input movie-checkbox" type="checkbox" value="@item.Id" onchange="updateDeleteButton()">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                        {
+                                            <img src="@item.ImageUrl" alt="@item.Title" class="me-3 rounded" 
+                                                 style="width: 50px; height: 75px; object-fit: cover;" 
+                                                 onerror="this.style.display='none';">
+                                        }
+                                        <div>
+                                            <strong>@Html.DisplayFor(modelItem => item.Title)</strong>
+                                            @if (item.IsNewRelease())
+                                            {
+                                                <span class="badge bg-success ms-2">New</span>
+                                            }
+                                            @if (item.IsClassic())
+                                            {
+                                                <span class="badge bg-warning text-dark ms-2">Classic</span>
+                                            }
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ReleaseDate)
+                                    <br><small class="text-muted">(@item.MovieAge years old)</small>
+                                </td>
+                                <td>
+                                    <span class="badge bg-secondary">@Html.DisplayFor(modelItem => item.Genre)</span>
+                                </td>
+                                <td>@Html.DisplayFor(modelItem => item.Director)</td>
+                                <td>
+                                    <strong>@Html.DisplayFor(modelItem => item.Price)</strong>
+                                    <br><small class="text-muted">(@item.GetPriceRange())</small>
+                                </td>
+                                <td>
+                                    <span class="badge bg-@item.GetRatingColor()">@Html.DisplayFor(modelItem => item.Rating)</span>
+                                </td>
+                                <td>@item.GetFormattedDuration()</td>
+                                <td>
+                                    @if (item.ImdbRating.HasValue)
+                                    {
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-star text-warning me-1"></i>
+                                            <span>@item.ImdbRating.Value.ToString("F1")</span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">N/A</span>
+                                    }
+                                </td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group">
+                                        <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm" title="View Details">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        @if (Model.IsAuthenticated && (Model.IsAdmin || item.AddedByUserId == Model.CurrentUser?.Id))
+                                        {
+                                            <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-outline-warning btn-sm" title="Edit">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm" title="Delete">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        }
+                                    </div>
+                                    @if (Model.IsAuthenticated)
+                                    {
+                                        <div class="mt-1">
+                                            @if (item.AddedByUserId == Model.CurrentUser?.Id)
+                                            {
+                                                <small class="text-success"><i class="fas fa-user-check me-1"></i>Your movie</small>
+                                            }
+                                            else if (!string.IsNullOrEmpty(item.AddedByUserId))
+                                            {
+                                                <small class="text-muted"><i class="fas fa-user me-1"></i>By other user</small>
+                                            }
+                                        </div>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="fas fa-film fa-3x text-muted mb-3"></i>
+                <h5 class="text-muted">No movies found</h5>
+                <p class="text-muted">Try adjusting your search criteria or add some movies to get started.</p>
+                <a asp-page="Create" class="btn btn-primary">
+                    <i class="fas fa-plus me-2"></i>Add Your First Movie
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+<script>
+    // Bulk Operations JavaScript
+    function toggleAll(selectAllCheckbox) {
+        const checkboxes = document.querySelectorAll('.movie-checkbox');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+        updateDeleteButton();
+    }
+
+    function selectAll() {
+        const checkboxes = document.querySelectorAll('.movie-checkbox');
+        const selectAllCheck = document.getElementById('selectAllCheck');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = true;
+        });
+        selectAllCheck.checked = true;
+        updateDeleteButton();
+    }
+
+    function clearSelection() {
+        const checkboxes = document.querySelectorAll('.movie-checkbox');
+        const selectAllCheck = document.getElementById('selectAllCheck');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        selectAllCheck.checked = false;
+        updateDeleteButton();
+    }
+
+    function updateDeleteButton() {
+        const checkedBoxes = document.querySelectorAll('.movie-checkbox:checked');
+        const deleteBtn = document.getElementById('deleteSelectedBtn');
+        
+        if (checkedBoxes.length > 0) {
+            deleteBtn.style.display = 'block';
+            deleteBtn.innerHTML = `<i class="fas fa-trash me-2"></i>Delete Selected (${checkedBoxes.length})`;
+        } else {
+            deleteBtn.style.display = 'none';
+        }
+    }
+
+    function getSelectedIds() {
+        const checkedBoxes = document.querySelectorAll('.movie-checkbox:checked');
+        return Array.from(checkedBoxes).map(cb => parseInt(cb.value));
+    }
+
+    function exportSelected(format) {
+        const selectedIds = getSelectedIds();
+        if (selectedIds.length === 0) {
+            showErrorToast('Please select at least one movie to export.');
+            return;
+        }
+        
+        showInfoToast(`Exporting ${selectedIds.length} selected movies to ${format.toUpperCase()}...`);
+        
+        // Create form and submit
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = '/Movies/Export';
+        
+        selectedIds.forEach(id => {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'movieIds';
+            input.value = id;
+            form.appendChild(input);
+        });
+        
+        const formatInput = document.createElement('input');
+        formatInput.type = 'hidden';
+        formatInput.name = 'format';
+        formatInput.value = format;
+        form.appendChild(formatInput);
+        
+        // Add anti-forgery token
+        const token = document.querySelector('input[name="__RequestVerificationToken"]');
+        if (token) {
+            const tokenInput = document.createElement('input');
+            tokenInput.type = 'hidden';
+            tokenInput.name = '__RequestVerificationToken';
+            tokenInput.value = token.value;
+            form.appendChild(tokenInput);
+        } else {
+            showErrorToast('Security error: Anti-forgery token not found. Please refresh the page.');
+            return;
+        }
+        
+        document.body.appendChild(form);
+        form.submit();
+        document.body.removeChild(form);
+    }
+
+    function exportAll(format) {
+        showInfoToast(`Exporting all movies to ${format.toUpperCase()}...`);
+        window.location.href = `/Movies/ExportAll?format=${format}`;
+    }
+
+    function deleteSelected() {
+        const selectedIds = getSelectedIds();
+        if (selectedIds.length === 0) {
+            showErrorToast('Please select at least one movie to delete.');
+            return;
+        }
+        
+        const confirmMessage = `Are you sure you want to delete ${selectedIds.length} selected movie(s)? This action cannot be undone.`;
+        
+        if (confirm(confirmMessage)) {
+            showInfoToast('Deleting selected movies...');
+            
+            // Create form and submit
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/Movies/BulkDelete';
+            
+            selectedIds.forEach(id => {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'movieIds';
+                input.value = id;
+                form.appendChild(input);
+            });
+            
+            // Add anti-forgery token
+            const token = document.querySelector('input[name="__RequestVerificationToken"]');
+            if (token) {
+                const tokenInput = document.createElement('input');
+                tokenInput.type = 'hidden';
+                tokenInput.name = '__RequestVerificationToken';
+                tokenInput.value = token.value;
+                form.appendChild(tokenInput);
+            }
+            
+            document.body.appendChild(form);
+            form.submit();
+            document.body.removeChild(form);
+        }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        updateDeleteButton();
+        
+        // Add click handler for table rows (optional - for better UX)
+        document.querySelectorAll('tbody tr').forEach(row => {
+            row.addEventListener('click', function(e) {
+                if (e.target.type !== 'checkbox' && !e.target.closest('a') && !e.target.closest('button')) {
+                    const checkbox = row.querySelector('.movie-checkbox');
+                    if (checkbox) {
+                        checkbox.checked = !checkbox.checked;
+                        updateDeleteButton();
+                    }
+                }
+            });
+        });
+    });
+</script>
+}
+
+<!-- Pagination -->
+@if (Model.TotalPages > 1)
+{
+    <nav aria-label="Movie pagination" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <!-- Previous Page -->
+            @if (Model.HasPreviousPage)
+            {
+                <li class="page-item">
+                    <a class="page-link" 
+                       asp-page="./Index" 
+                       asp-route-pageNumber="@(Model.PageNumber - 1)"
+                       asp-route-searchString="@Model.SearchString"
+                       asp-route-movieGenre="@Model.MovieGenre"
+                       asp-route-movieRating="@Model.MovieRating"
+                       asp-route-director="@Model.Director"
+                       asp-route-yearFrom="@Model.YearFrom"
+                       asp-route-yearTo="@Model.YearTo"
+                       asp-route-priceFrom="@Model.PriceFrom"
+                       asp-route-priceTo="@Model.PriceTo"
+                       asp-route-minRating="@Model.MinRating"
+                       asp-route-language="@Model.Language"
+                       asp-route-country="@Model.Country"
+                       asp-route-isAvailable="@Model.IsAvailable"
+                       asp-route-sortOrder="@Model.SortOrder">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li class="page-item disabled">
+                    <span class="page-link"><i class="fas fa-chevron-left"></i> Previous</span>
+                </li>
+            }
+
+            <!-- Page Numbers -->
+            @{
+                var startPage = Math.Max(1, Model.PageNumber - 2);
+                var endPage = Math.Min(Model.TotalPages, Model.PageNumber + 2);
+            }
+
+            @if (startPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" 
+                       asp-page="./Index" 
+                       asp-route-pageNumber="1"
+                       asp-route-searchString="@Model.SearchString"
+                       asp-route-movieGenre="@Model.MovieGenre"
+                       asp-route-movieRating="@Model.MovieRating"
+                       asp-route-director="@Model.Director"
+                       asp-route-yearFrom="@Model.YearFrom"
+                       asp-route-yearTo="@Model.YearTo"
+                       asp-route-priceFrom="@Model.PriceFrom"
+                       asp-route-priceTo="@Model.PriceTo"
+                       asp-route-minRating="@Model.MinRating"
+                       asp-route-language="@Model.Language"
+                       asp-route-country="@Model.Country"
+                       asp-route-isAvailable="@Model.IsAvailable"
+                       asp-route-sortOrder="@Model.SortOrder">1</a>
+                </li>
+                @if (startPage > 2)
+                {
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                }
+            }
+
+            @for (int i = startPage; i <= endPage; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    @if (i == Model.PageNumber)
+                    {
+                        <span class="page-link">@i <span class="visually-hidden">(current)</span></span>
+                    }
+                    else
+                    {
+                        <a class="page-link" 
+                           asp-page="./Index" 
+                           asp-route-pageNumber="@i"
+                           asp-route-searchString="@Model.SearchString"
+                           asp-route-movieGenre="@Model.MovieGenre"
+                           asp-route-movieRating="@Model.MovieRating"
+                           asp-route-director="@Model.Director"
+                           asp-route-yearFrom="@Model.YearFrom"
+                           asp-route-yearTo="@Model.YearTo"
+                           asp-route-priceFrom="@Model.PriceFrom"
+                           asp-route-priceTo="@Model.PriceTo"
+                           asp-route-minRating="@Model.MinRating"
+                           asp-route-language="@Model.Language"
+                           asp-route-country="@Model.Country"
+                           asp-route-isAvailable="@Model.IsAvailable"
+                           asp-route-sortOrder="@Model.SortOrder">@i</a>
+                    }
+                </li>
+            }
+
+            @if (endPage < Model.TotalPages)
+            {
+                @if (endPage < Model.TotalPages - 1)
+                {
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                }
+                <li class="page-item">
+                    <a class="page-link" 
+                       asp-page="./Index" 
+                       asp-route-pageNumber="@Model.TotalPages"
+                       asp-route-searchString="@Model.SearchString"
+                       asp-route-movieGenre="@Model.MovieGenre"
+                       asp-route-movieRating="@Model.MovieRating"
+                       asp-route-director="@Model.Director"
+                       asp-route-yearFrom="@Model.YearFrom"
+                       asp-route-yearTo="@Model.YearTo"
+                       asp-route-priceFrom="@Model.PriceFrom"
+                       asp-route-priceTo="@Model.PriceTo"
+                       asp-route-minRating="@Model.MinRating"
+                       asp-route-language="@Model.Language"
+                       asp-route-country="@Model.Country"
+                       asp-route-isAvailable="@Model.IsAvailable"
+                       asp-route-sortOrder="@Model.SortOrder">@Model.TotalPages</a>
+                </li>
+            }
+
+            <!-- Next Page -->
+            @if (Model.HasNextPage)
+            {
+                <li class="page-item">
+                    <a class="page-link" 
+                       asp-page="./Index" 
+                       asp-route-pageNumber="@(Model.PageNumber + 1)"
+                       asp-route-searchString="@Model.SearchString"
+                       asp-route-movieGenre="@Model.MovieGenre"
+                       asp-route-movieRating="@Model.MovieRating"
+                       asp-route-director="@Model.Director"
+                       asp-route-yearFrom="@Model.YearFrom"
+                       asp-route-yearTo="@Model.YearTo"
+                       asp-route-priceFrom="@Model.PriceFrom"
+                       asp-route-priceTo="@Model.PriceTo"
+                       asp-route-minRating="@Model.MinRating"
+                       asp-route-language="@Model.Language"
+                       asp-route-country="@Model.Country"
+                       asp-route-isAvailable="@Model.IsAvailable"
+                       asp-route-sortOrder="@Model.SortOrder">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li class="page-item disabled">
+                    <span class="page-link">Next <i class="fas fa-chevron-right"></i></span>
+                </li>
+            }
+        </ul>
+    </nav>
+
+    <!-- Pagination Info -->
+    <div class="text-center text-muted mt-2">
+        <small>
+            Showing page @Model.PageNumber of @Model.TotalPages 
+            (@Model.PageSize movies per page)
+        </small>
+    </div>
+}

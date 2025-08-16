@@ -1,0 +1,32 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.pdb
+*.exe
+*.dll
+
+# Visual Studio
+.vscode/
+.idea/
+*.sln
+*.sln.iml
+
+# Temp
+*.tmp
+*.temp
+*.bak
+*.log
+
+# Environment variables
+.env
+*.env.local
+*.env.development
+*.env.production
+
+# Package directories
+node_modules/
+wwwroot/lib/

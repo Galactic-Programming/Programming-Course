@@ -1,0 +1,260 @@
+@page
+@model RazorPagesMovie.Areas.Admin.Pages.UsersModel
+@{
+    ViewData["Title"] = "User Management";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">
+            <i class="fas fa-users me-2"></i>User Management
+        </h1>
+        <div>
+            <span class="badge bg-info">Total Users: @Model.Users.Count</span>
+            <span class="badge bg-success">Active: @Model.Users.Count(u => u.IsActive)</span>
+            <span class="badge bg-warning">Inactive: @Model.Users.Count(u => !u.IsActive)</span>
+        </div>
+    </div>
+
+    <!-- Success/Error Messages -->
+    @if (!string.IsNullOrEmpty(TempData["SuccessMessage"] as string))
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle me-2"></i>@TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>@TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- User Statistics Cards -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Users</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.Users.Count</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-users fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Active Users</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.Users.Count(u => u.IsActive)</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-user-check fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Admins</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.Users.Count(u => u.Role == RazorPagesMovie.Models.UserRole.Admin)</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-user-shield fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">New This Month</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.Users.Count(u => u.DateJoined >= DateTime.Now.AddDays(-30))</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Users Table -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">User List</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Joined</th>
+                            <th>Last Login</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model.Users)
+                        {
+                            <tr class="@(user.IsActive ? "" : "table-secondary")">
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3">
+                                            @if (!string.IsNullOrEmpty(user.ProfilePictureUrl))
+                                            {
+                                                <img src="@user.ProfilePictureUrl" alt="Profile" class="rounded-circle" width="40" height="40">
+                                            }
+                                            else
+                                            {
+                                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                                    <span class="text-white font-weight-bold">@user.FirstName.Substring(0, 1)@user.LastName.Substring(0, 1)</span>
+                                                </div>
+                                            }
+                                        </div>
+                                        <div>
+                                            <div class="font-weight-bold">@user.FullName</div>
+                                            @if (user.Id == Model.CurrentUser?.Id)
+                                            {
+                                                <small class="text-primary"><i class="fas fa-star me-1"></i>(You)</small>
+                                            }
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>@user.Email</td>
+                                <td>
+                                    @switch (user.Role)
+                                    {
+                                        case RazorPagesMovie.Models.UserRole.Admin:
+                                            <span class="badge bg-danger"><i class="fas fa-user-shield me-1"></i>Admin</span>
+                                            break;
+                                        case RazorPagesMovie.Models.UserRole.Moderator:
+                                            <span class="badge bg-warning"><i class="fas fa-user-cog me-1"></i>Moderator</span>
+                                            break;
+                                        default:
+                                            <span class="badge bg-secondary"><i class="fas fa-user me-1"></i>User</span>
+                                            break;
+                                    }
+                                </td>
+                                <td>
+                                    @if (user.IsActive)
+                                    {
+                                        <span class="badge bg-success"><i class="fas fa-check me-1"></i>Active</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary"><i class="fas fa-times me-1"></i>Inactive</span>
+                                    }
+                                </td>
+                                <td>@user.DateJoined.ToString("MMM dd, yyyy")</td>
+                                <td>
+                                    @if (user.LastLoginDate.HasValue)
+                                    {
+                                        @user.LastLoginDate.Value.ToString("MMM dd, yyyy")
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Never</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (user.Id != Model.CurrentUser?.Id)
+                                    {
+                                        <div class="btn-group" role="group">
+                                            <!-- Toggle Status -->
+                                            <form method="post" asp-page-handler="ToggleStatus" style="display: inline;">
+                                                <input type="hidden" name="userId" value="@user.Id" />
+                                                <button type="submit" class="btn btn-sm @(user.IsActive ? "btn-outline-warning" : "btn-outline-success")" 
+                                                        title="@(user.IsActive ? "Deactivate" : "Activate")"
+                                                        onclick="return confirm('@(user.IsActive ? "Deactivate" : "Activate") this user?')">
+                                                    <i class="fas fa-@(user.IsActive ? "pause" : "play")"></i>
+                                                </button>
+                                            </form>
+
+                                            <!-- Change Role Dropdown -->
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" 
+                                                        data-bs-toggle="dropdown" title="Change Role">
+                                                    <i class="fas fa-user-cog"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    @foreach (RazorPagesMovie.Models.UserRole role in Enum.GetValues<RazorPagesMovie.Models.UserRole>())
+                                                    {
+                                                        @if (role != user.Role)
+                                                        {
+                                                            <li>
+                                                                <form method="post" asp-page-handler="ChangeRole" class="dropdown-item-text p-0">
+                                                                    <input type="hidden" name="userId" value="@user.Id" />
+                                                                    <input type="hidden" name="newRole" value="@role" />
+                                                                    <button type="submit" class="dropdown-item border-0 w-100 text-start"
+                                                                            onclick="return confirm('Change role to @role?')">
+                                                                        <i class="fas fa-@(role == RazorPagesMovie.Models.UserRole.Admin ? "user-shield" : role == RazorPagesMovie.Models.UserRole.Moderator ? "user-cog" : "user") me-2"></i>@role
+                                                                    </button>
+                                                                </form>
+                                                            </li>
+                                                        }
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Current User</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.border-left-primary {
+    border-left: 4px solid #007bff !important;
+}
+
+.border-left-success {
+    border-left: 4px solid #28a745 !important;
+}
+
+.border-left-info {
+    border-left: 4px solid #17a2b8 !important;
+}
+
+.border-left-warning {
+    border-left: 4px solid #ffc107 !important;
+}
+
+.shadow {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+</style>
