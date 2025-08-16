@@ -1,0 +1,36 @@
+# Ignore node_modules and build output
+node_modules/
+dist/
+build/
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore system files
+.DS_Store
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore test coverage
+coverage/
+
+# Ignore lock files (optional, if you want to regenerate them)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore output folders for all my-react-app projects
+**/my-react-app/node_modules/
+**/my-react-app/dist/
+**/my-react-app/build/
+**/my-react-app/.env*
+**/my-react-app/.DS_Store
+**/my-react-app/.vscode/
+**/my-react-app/.idea/
+**/my-react-app/coverage/
+**/my-react-app/package-lock.json
+**/my-react-app/yarn.lock
+**/my-react-app/pnpm-lock.yaml
