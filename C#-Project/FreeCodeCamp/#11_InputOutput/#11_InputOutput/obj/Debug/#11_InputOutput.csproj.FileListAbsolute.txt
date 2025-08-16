@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#11_InputOutput\#11_InputOutput\bin\Debug\#11_InputOutput.exe.config
+C:\Users\bosco\source\repos\#11_InputOutput\#11_InputOutput\bin\Debug\#11_InputOutput.exe
+C:\Users\bosco\source\repos\#11_InputOutput\#11_InputOutput\bin\Debug\#11_InputOutput.pdb
+C:\Users\bosco\source\repos\#11_InputOutput\#11_InputOutput\obj\Debug\#11_InputOutput.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#11_InputOutput\#11_InputOutput\obj\Debug\#11_InputOutput.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#11_InputOutput\#11_InputOutput\obj\Debug\#11_InputOutput.exe
+C:\Users\bosco\source\repos\#11_InputOutput\#11_InputOutput\obj\Debug\#11_InputOutput.pdb

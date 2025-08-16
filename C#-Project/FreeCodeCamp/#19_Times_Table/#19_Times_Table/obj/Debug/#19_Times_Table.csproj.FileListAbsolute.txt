@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\30-12-2024\#19_Times_Table\#19_Times_Table\bin\Debug\#19_Times_Table.exe.config
+C:\Users\bosco\source\repos\30-12-2024\#19_Times_Table\#19_Times_Table\bin\Debug\#19_Times_Table.exe
+C:\Users\bosco\source\repos\30-12-2024\#19_Times_Table\#19_Times_Table\bin\Debug\#19_Times_Table.pdb
+C:\Users\bosco\source\repos\30-12-2024\#19_Times_Table\#19_Times_Table\obj\Debug\#19_Times_Table.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\30-12-2024\#19_Times_Table\#19_Times_Table\obj\Debug\#19_Times_Table.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\30-12-2024\#19_Times_Table\#19_Times_Table\obj\Debug\#19_Times_Table.exe
+C:\Users\bosco\source\repos\30-12-2024\#19_Times_Table\#19_Times_Table\obj\Debug\#19_Times_Table.pdb

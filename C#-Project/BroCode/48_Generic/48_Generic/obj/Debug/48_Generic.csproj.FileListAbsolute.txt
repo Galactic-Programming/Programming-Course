@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\48_Generic\48_Generic\bin\Debug\48_Generic.exe.config
+C:\Users\bosco\source\repos\BroCode\48_Generic\48_Generic\bin\Debug\48_Generic.exe
+C:\Users\bosco\source\repos\BroCode\48_Generic\48_Generic\bin\Debug\48_Generic.pdb
+C:\Users\bosco\source\repos\BroCode\48_Generic\48_Generic\obj\Debug\48_Generic.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\48_Generic\48_Generic\obj\Debug\48_Generic.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\48_Generic\48_Generic\obj\Debug\48_Generic.exe
+C:\Users\bosco\source\repos\BroCode\48_Generic\48_Generic\obj\Debug\48_Generic.pdb

@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\13_LogicalOperators\13_LogicalOperators\bin\Debug\13_LogicalOperators.exe.config
+C:\Users\bosco\source\repos\BroCode\13_LogicalOperators\13_LogicalOperators\bin\Debug\13_LogicalOperators.exe
+C:\Users\bosco\source\repos\BroCode\13_LogicalOperators\13_LogicalOperators\bin\Debug\13_LogicalOperators.pdb
+C:\Users\bosco\source\repos\BroCode\13_LogicalOperators\13_LogicalOperators\obj\Debug\13_LogicalOperators.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\13_LogicalOperators\13_LogicalOperators\obj\Debug\13_LogicalOperators.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\13_LogicalOperators\13_LogicalOperators\obj\Debug\13_LogicalOperators.exe
+C:\Users\bosco\source\repos\BroCode\13_LogicalOperators\13_LogicalOperators\obj\Debug\13_LogicalOperators.pdb

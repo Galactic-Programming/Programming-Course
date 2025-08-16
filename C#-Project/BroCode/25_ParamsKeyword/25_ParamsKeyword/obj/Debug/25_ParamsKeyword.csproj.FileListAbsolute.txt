@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\25_ParamsKeyword\25_ParamsKeyword\bin\Debug\25_ParamsKeyword.exe.config
+C:\Users\bosco\source\repos\BroCode\25_ParamsKeyword\25_ParamsKeyword\bin\Debug\25_ParamsKeyword.exe
+C:\Users\bosco\source\repos\BroCode\25_ParamsKeyword\25_ParamsKeyword\bin\Debug\25_ParamsKeyword.pdb
+C:\Users\bosco\source\repos\BroCode\25_ParamsKeyword\25_ParamsKeyword\obj\Debug\25_ParamsKeyword.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\25_ParamsKeyword\25_ParamsKeyword\obj\Debug\25_ParamsKeyword.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\25_ParamsKeyword\25_ParamsKeyword\obj\Debug\25_ParamsKeyword.exe
+C:\Users\bosco\source\repos\BroCode\25_ParamsKeyword\25_ParamsKeyword\obj\Debug\25_ParamsKeyword.pdb

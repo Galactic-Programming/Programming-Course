@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\15_ForLoop\15_ForLoop\bin\Debug\15_ForLoop.exe.config
+C:\Users\bosco\source\repos\BroCode\15_ForLoop\15_ForLoop\bin\Debug\15_ForLoop.exe
+C:\Users\bosco\source\repos\BroCode\15_ForLoop\15_ForLoop\bin\Debug\15_ForLoop.pdb
+C:\Users\bosco\source\repos\BroCode\15_ForLoop\15_ForLoop\obj\Debug\15_ForLoop.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\15_ForLoop\15_ForLoop\obj\Debug\15_ForLoop.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\15_ForLoop\15_ForLoop\obj\Debug\15_ForLoop.exe
+C:\Users\bosco\source\repos\BroCode\15_ForLoop\15_ForLoop\obj\Debug\15_ForLoop.pdb

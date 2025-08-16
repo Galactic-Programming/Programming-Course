@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\26_ExceptionHandling\26_ExceptionHandling\bin\Debug\26_ExceptionHandling.exe.config
+C:\Users\bosco\source\repos\BroCode\26_ExceptionHandling\26_ExceptionHandling\bin\Debug\26_ExceptionHandling.exe
+C:\Users\bosco\source\repos\BroCode\26_ExceptionHandling\26_ExceptionHandling\bin\Debug\26_ExceptionHandling.pdb
+C:\Users\bosco\source\repos\BroCode\26_ExceptionHandling\26_ExceptionHandling\obj\Debug\26_ExceptionHandling.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\26_ExceptionHandling\26_ExceptionHandling\obj\Debug\26_ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\26_ExceptionHandling\26_ExceptionHandling\obj\Debug\26_ExceptionHandling.exe
+C:\Users\bosco\source\repos\BroCode\26_ExceptionHandling\26_ExceptionHandling\obj\Debug\26_ExceptionHandling.pdb

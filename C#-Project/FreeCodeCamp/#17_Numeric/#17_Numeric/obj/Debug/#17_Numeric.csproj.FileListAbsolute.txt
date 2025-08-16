@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#17_Numeric\#17_Numeric\bin\Debug\#17_Numeric.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#17_Numeric\#17_Numeric\bin\Debug\#17_Numeric.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#17_Numeric\#17_Numeric\bin\Debug\#17_Numeric.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#17_Numeric\#17_Numeric\obj\Debug\#17_Numeric.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#17_Numeric\#17_Numeric\obj\Debug\#17_Numeric.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#17_Numeric\#17_Numeric\obj\Debug\#17_Numeric.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#17_Numeric\#17_Numeric\obj\Debug\#17_Numeric.pdb

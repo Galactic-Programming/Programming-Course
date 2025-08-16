@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\40_ToStringMethod\40_ToStringMethod\bin\Debug\40_ToStringMethod.exe.config
+C:\Users\bosco\source\repos\BroCode\40_ToStringMethod\40_ToStringMethod\bin\Debug\40_ToStringMethod.exe
+C:\Users\bosco\source\repos\BroCode\40_ToStringMethod\40_ToStringMethod\bin\Debug\40_ToStringMethod.pdb
+C:\Users\bosco\source\repos\BroCode\40_ToStringMethod\40_ToStringMethod\obj\Debug\40_ToStringMethod.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\40_ToStringMethod\40_ToStringMethod\obj\Debug\40_ToStringMethod.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\40_ToStringMethod\40_ToStringMethod\obj\Debug\40_ToStringMethod.exe
+C:\Users\bosco\source\repos\BroCode\40_ToStringMethod\40_ToStringMethod\obj\Debug\40_ToStringMethod.pdb

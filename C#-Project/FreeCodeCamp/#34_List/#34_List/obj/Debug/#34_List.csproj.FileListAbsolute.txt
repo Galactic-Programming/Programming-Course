@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#34_List\#34_List\bin\Debug\#34_List.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#34_List\#34_List\bin\Debug\#34_List.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#34_List\#34_List\bin\Debug\#34_List.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#34_List\#34_List\obj\Debug\#34_List.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#34_List\#34_List\obj\Debug\#34_List.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#34_List\#34_List\obj\Debug\#34_List.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#34_List\#34_List\obj\Debug\#34_List.pdb

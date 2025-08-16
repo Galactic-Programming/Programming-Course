@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\36_AbstractClasses\36_AbstractClasses\bin\Debug\36_AbstractClasses.exe.config
+C:\Users\bosco\source\repos\BroCode\36_AbstractClasses\36_AbstractClasses\bin\Debug\36_AbstractClasses.exe
+C:\Users\bosco\source\repos\BroCode\36_AbstractClasses\36_AbstractClasses\bin\Debug\36_AbstractClasses.pdb
+C:\Users\bosco\source\repos\BroCode\36_AbstractClasses\36_AbstractClasses\obj\Debug\36_AbstractClasses.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\36_AbstractClasses\36_AbstractClasses\obj\Debug\36_AbstractClasses.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\36_AbstractClasses\36_AbstractClasses\obj\Debug\36_AbstractClasses.exe
+C:\Users\bosco\source\repos\BroCode\36_AbstractClasses\36_AbstractClasses\obj\Debug\36_AbstractClasses.pdb

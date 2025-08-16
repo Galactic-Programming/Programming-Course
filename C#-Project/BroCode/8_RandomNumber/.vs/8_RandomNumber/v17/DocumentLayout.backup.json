@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bosco\\source\\repos\\BroCode\\8_RandomNumber\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C38E03E4-AD0A-4AAB-ABB5-96DA781E3F77}|8_RandomNumber\\8_RandomNumber.csproj|c:\\users\\bosco\\source\\repos\\brocode\\8_randomnumber\\8_randomnumber\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C38E03E4-AD0A-4AAB-ABB5-96DA781E3F77}|8_RandomNumber\\8_RandomNumber.csproj|solutionrelative:8_randomnumber\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bosco\\source\\repos\\BroCode\\8_RandomNumber\\8_RandomNumber\\Program.cs",
+              "RelativeDocumentMoniker": "8_RandomNumber\\Program.cs",
+              "ToolTip": "C:\\Users\\bosco\\source\\repos\\BroCode\\8_RandomNumber\\8_RandomNumber\\Program.cs",
+              "RelativeToolTip": "8_RandomNumber\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T15:23:47.747Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

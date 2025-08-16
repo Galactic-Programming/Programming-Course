@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#10_OddEvenChecker\#10_OddEvenChecker\bin\Debug\#10_OddEvenChecker.exe.config
+C:\Users\bosco\source\repos\#10_OddEvenChecker\#10_OddEvenChecker\bin\Debug\#10_OddEvenChecker.exe
+C:\Users\bosco\source\repos\#10_OddEvenChecker\#10_OddEvenChecker\bin\Debug\#10_OddEvenChecker.pdb
+C:\Users\bosco\source\repos\#10_OddEvenChecker\#10_OddEvenChecker\obj\Debug\#10_OddEvenChecker.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#10_OddEvenChecker\#10_OddEvenChecker\obj\Debug\#10_OddEvenChecker.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#10_OddEvenChecker\#10_OddEvenChecker\obj\Debug\#10_OddEvenChecker.exe
+C:\Users\bosco\source\repos\#10_OddEvenChecker\#10_OddEvenChecker\obj\Debug\#10_OddEvenChecker.pdb

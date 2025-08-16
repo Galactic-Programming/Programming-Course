@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\29_MultidimensionalArray\29_MultidimensionalArray\bin\Debug\29_MultidimensionalArray.exe.config
+C:\Users\bosco\source\repos\BroCode\29_MultidimensionalArray\29_MultidimensionalArray\bin\Debug\29_MultidimensionalArray.exe
+C:\Users\bosco\source\repos\BroCode\29_MultidimensionalArray\29_MultidimensionalArray\bin\Debug\29_MultidimensionalArray.pdb
+C:\Users\bosco\source\repos\BroCode\29_MultidimensionalArray\29_MultidimensionalArray\obj\Debug\29_MultidimensionalArray.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\29_MultidimensionalArray\29_MultidimensionalArray\obj\Debug\29_MultidimensionalArray.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\29_MultidimensionalArray\29_MultidimensionalArray\obj\Debug\29_MultidimensionalArray.exe
+C:\Users\bosco\source\repos\BroCode\29_MultidimensionalArray\29_MultidimensionalArray\obj\Debug\29_MultidimensionalArray.pdb

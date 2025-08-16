@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#1_NumericDataTypes\#1_NumericDataTypes\bin\Debug\#1_NumericDataTypes.exe.config
+C:\Users\bosco\source\repos\#1_NumericDataTypes\#1_NumericDataTypes\bin\Debug\#1_NumericDataTypes.exe
+C:\Users\bosco\source\repos\#1_NumericDataTypes\#1_NumericDataTypes\bin\Debug\#1_NumericDataTypes.pdb
+C:\Users\bosco\source\repos\#1_NumericDataTypes\#1_NumericDataTypes\obj\Debug\#1_NumericDataTypes.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#1_NumericDataTypes\#1_NumericDataTypes\obj\Debug\#1_NumericDataTypes.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#1_NumericDataTypes\#1_NumericDataTypes\obj\Debug\#1_NumericDataTypes.exe
+C:\Users\bosco\source\repos\#1_NumericDataTypes\#1_NumericDataTypes\obj\Debug\#1_NumericDataTypes.pdb

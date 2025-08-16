@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bosco\\source\\repos\\BroCode\\5_UserInput\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F23301-CE74-48B2-A2FA-FD6EAEDD8CBE}|5_UserInput\\5_UserInput.csproj|c:\\users\\bosco\\source\\repos\\brocode\\5_userinput\\5_userinput\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F23301-CE74-48B2-A2FA-FD6EAEDD8CBE}|5_UserInput\\5_UserInput.csproj|solutionrelative:5_userinput\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bosco\\source\\repos\\BroCode\\5_UserInput\\5_UserInput\\Program.cs",
+              "RelativeDocumentMoniker": "5_UserInput\\Program.cs",
+              "ToolTip": "C:\\Users\\bosco\\source\\repos\\BroCode\\5_UserInput\\5_UserInput\\Program.cs",
+              "RelativeToolTip": "5_UserInput\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T13:45:03.498Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

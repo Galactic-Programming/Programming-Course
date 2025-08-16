@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\14_WhileLoop\14_WhileLoop\bin\Debug\14_WhileLoop.exe.config
+C:\Users\bosco\source\repos\BroCode\14_WhileLoop\14_WhileLoop\bin\Debug\14_WhileLoop.exe
+C:\Users\bosco\source\repos\BroCode\14_WhileLoop\14_WhileLoop\bin\Debug\14_WhileLoop.pdb
+C:\Users\bosco\source\repos\BroCode\14_WhileLoop\14_WhileLoop\obj\Debug\14_WhileLoop.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\14_WhileLoop\14_WhileLoop\obj\Debug\14_WhileLoop.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\14_WhileLoop\14_WhileLoop\obj\Debug\14_WhileLoop.exe
+C:\Users\bosco\source\repos\BroCode\14_WhileLoop\14_WhileLoop\obj\Debug\14_WhileLoop.pdb

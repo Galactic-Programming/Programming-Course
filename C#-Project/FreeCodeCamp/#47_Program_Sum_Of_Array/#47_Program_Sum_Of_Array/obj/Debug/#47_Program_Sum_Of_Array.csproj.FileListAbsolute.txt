@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#47_Program_Sum_Of_Array\#47_Program_Sum_Of_Array\bin\Debug\#47_Program_Sum_Of_Array.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#47_Program_Sum_Of_Array\#47_Program_Sum_Of_Array\bin\Debug\#47_Program_Sum_Of_Array.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#47_Program_Sum_Of_Array\#47_Program_Sum_Of_Array\bin\Debug\#47_Program_Sum_Of_Array.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#47_Program_Sum_Of_Array\#47_Program_Sum_Of_Array\obj\Debug\#47_Program_Sum_Of_Array.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#47_Program_Sum_Of_Array\#47_Program_Sum_Of_Array\obj\Debug\#47_Program_Sum_Of_Array.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#47_Program_Sum_Of_Array\#47_Program_Sum_Of_Array\obj\Debug\#47_Program_Sum_Of_Array.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#47_Program_Sum_Of_Array\#47_Program_Sum_Of_Array\obj\Debug\#47_Program_Sum_Of_Array.pdb

@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#59_Class_ToString_Function_OverRide\#59_Class_ToString_Function_OverRide\bin\Debug\#59_Class_ToString_Function_OverRide.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#59_Class_ToString_Function_OverRide\#59_Class_ToString_Function_OverRide\bin\Debug\#59_Class_ToString_Function_OverRide.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#59_Class_ToString_Function_OverRide\#59_Class_ToString_Function_OverRide\bin\Debug\#59_Class_ToString_Function_OverRide.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#59_Class_ToString_Function_OverRide\#59_Class_ToString_Function_OverRide\obj\Debug\#59_Class_ToString_Function_OverRide.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#59_Class_ToString_Function_OverRide\#59_Class_ToString_Function_OverRide\obj\Debug\#59_Class_ToString_Function_OverRide.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#59_Class_ToString_Function_OverRide\#59_Class_ToString_Function_OverRide\obj\Debug\#59_Class_ToString_Function_OverRide.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#59_Class_ToString_Function_OverRide\#59_Class_ToString_Function_OverRide\obj\Debug\#59_Class_ToString_Function_OverRide.pdb

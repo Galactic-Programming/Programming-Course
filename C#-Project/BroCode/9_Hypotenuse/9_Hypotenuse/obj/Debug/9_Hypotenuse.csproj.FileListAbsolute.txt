@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\9_Hypotenuse\9_Hypotenuse\bin\Debug\9_Hypotenuse.exe.config
+C:\Users\bosco\source\repos\BroCode\9_Hypotenuse\9_Hypotenuse\bin\Debug\9_Hypotenuse.exe
+C:\Users\bosco\source\repos\BroCode\9_Hypotenuse\9_Hypotenuse\bin\Debug\9_Hypotenuse.pdb
+C:\Users\bosco\source\repos\BroCode\9_Hypotenuse\9_Hypotenuse\obj\Debug\9_Hypotenuse.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\9_Hypotenuse\9_Hypotenuse\obj\Debug\9_Hypotenuse.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\9_Hypotenuse\9_Hypotenuse\obj\Debug\9_Hypotenuse.exe
+C:\Users\bosco\source\repos\BroCode\9_Hypotenuse\9_Hypotenuse\obj\Debug\9_Hypotenuse.pdb

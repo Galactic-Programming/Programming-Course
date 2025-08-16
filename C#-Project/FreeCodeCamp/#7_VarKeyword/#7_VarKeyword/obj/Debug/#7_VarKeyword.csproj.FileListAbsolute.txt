@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#7_VarKeyword\#7_VarKeyword\bin\Debug\#7_VarKeyword.exe.config
+C:\Users\bosco\source\repos\#7_VarKeyword\#7_VarKeyword\bin\Debug\#7_VarKeyword.exe
+C:\Users\bosco\source\repos\#7_VarKeyword\#7_VarKeyword\bin\Debug\#7_VarKeyword.pdb
+C:\Users\bosco\source\repos\#7_VarKeyword\#7_VarKeyword\obj\Debug\#7_VarKeyword.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#7_VarKeyword\#7_VarKeyword\obj\Debug\#7_VarKeyword.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#7_VarKeyword\#7_VarKeyword\obj\Debug\#7_VarKeyword.exe
+C:\Users\bosco\source\repos\#7_VarKeyword\#7_VarKeyword\obj\Debug\#7_VarKeyword.pdb

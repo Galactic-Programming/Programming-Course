@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#16_ConditionOper\#16_ConditionOper\bin\Debug\#16_ConditionOper.exe.config
+C:\Users\bosco\source\repos\#16_ConditionOper\#16_ConditionOper\bin\Debug\#16_ConditionOper.exe
+C:\Users\bosco\source\repos\#16_ConditionOper\#16_ConditionOper\bin\Debug\#16_ConditionOper.pdb
+C:\Users\bosco\source\repos\#16_ConditionOper\#16_ConditionOper\obj\Debug\#16_ConditionOper.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#16_ConditionOper\#16_ConditionOper\obj\Debug\#16_ConditionOper.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#16_ConditionOper\#16_ConditionOper\obj\Debug\#16_ConditionOper.exe
+C:\Users\bosco\source\repos\#16_ConditionOper\#16_ConditionOper\obj\Debug\#16_ConditionOper.pdb

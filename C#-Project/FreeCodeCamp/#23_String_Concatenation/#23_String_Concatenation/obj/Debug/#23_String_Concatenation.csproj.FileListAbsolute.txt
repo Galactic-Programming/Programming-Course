@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#23_String_Concatenation\#23_String_Concatenation\bin\Debug\#23_String_Concatenation.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#23_String_Concatenation\#23_String_Concatenation\bin\Debug\#23_String_Concatenation.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#23_String_Concatenation\#23_String_Concatenation\bin\Debug\#23_String_Concatenation.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#23_String_Concatenation\#23_String_Concatenation\obj\Debug\#23_String_Concatenation.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#23_String_Concatenation\#23_String_Concatenation\obj\Debug\#23_String_Concatenation.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#23_String_Concatenation\#23_String_Concatenation\obj\Debug\#23_String_Concatenation.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#23_String_Concatenation\#23_String_Concatenation\obj\Debug\#23_String_Concatenation.pdb

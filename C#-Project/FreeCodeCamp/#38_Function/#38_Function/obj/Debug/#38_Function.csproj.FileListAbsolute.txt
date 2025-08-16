@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#38_Function\#38_Function\bin\Debug\#38_Function.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#38_Function\#38_Function\bin\Debug\#38_Function.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#38_Function\#38_Function\bin\Debug\#38_Function.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#38_Function\#38_Function\obj\Debug\#38_Function.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#38_Function\#38_Function\obj\Debug\#38_Function.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#38_Function\#38_Function\obj\Debug\#38_Function.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#38_Function\#38_Function\obj\Debug\#38_Function.pdb

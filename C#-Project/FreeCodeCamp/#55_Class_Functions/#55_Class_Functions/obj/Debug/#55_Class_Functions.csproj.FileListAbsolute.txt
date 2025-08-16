@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#55_Class_Functions\#55_Class_Functions\bin\Debug\#55_Class_Functions.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#55_Class_Functions\#55_Class_Functions\bin\Debug\#55_Class_Functions.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#55_Class_Functions\#55_Class_Functions\bin\Debug\#55_Class_Functions.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#55_Class_Functions\#55_Class_Functions\obj\Debug\#55_Class_Functions.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#55_Class_Functions\#55_Class_Functions\obj\Debug\#55_Class_Functions.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#55_Class_Functions\#55_Class_Functions\obj\Debug\#55_Class_Functions.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#55_Class_Functions\#55_Class_Functions\obj\Debug\#55_Class_Functions.pdb

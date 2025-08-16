@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#40_Return_Type_Functions\#40_Return_Type_Functions\bin\Debug\#40_Return_Type_Functions.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#40_Return_Type_Functions\#40_Return_Type_Functions\bin\Debug\#40_Return_Type_Functions.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#40_Return_Type_Functions\#40_Return_Type_Functions\bin\Debug\#40_Return_Type_Functions.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#40_Return_Type_Functions\#40_Return_Type_Functions\obj\Debug\#40_Return_Type_Functions.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#40_Return_Type_Functions\#40_Return_Type_Functions\obj\Debug\#40_Return_Type_Functions.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#40_Return_Type_Functions\#40_Return_Type_Functions\obj\Debug\#40_Return_Type_Functions.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#40_Return_Type_Functions\#40_Return_Type_Functions\obj\Debug\#40_Return_Type_Functions.pdb

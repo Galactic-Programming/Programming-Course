@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\5_UserInput\5_UserInput\bin\Debug\5_UserInput.exe.config
+C:\Users\bosco\source\repos\BroCode\5_UserInput\5_UserInput\bin\Debug\5_UserInput.exe
+C:\Users\bosco\source\repos\BroCode\5_UserInput\5_UserInput\bin\Debug\5_UserInput.pdb
+C:\Users\bosco\source\repos\BroCode\5_UserInput\5_UserInput\obj\Debug\5_UserInput.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\5_UserInput\5_UserInput\obj\Debug\5_UserInput.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\5_UserInput\5_UserInput\obj\Debug\5_UserInput.exe
+C:\Users\bosco\source\repos\BroCode\5_UserInput\5_UserInput\obj\Debug\5_UserInput.pdb

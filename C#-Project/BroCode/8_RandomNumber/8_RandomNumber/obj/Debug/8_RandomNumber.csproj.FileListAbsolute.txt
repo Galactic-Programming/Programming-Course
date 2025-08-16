@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\8_RandomNumber\8_RandomNumber\bin\Debug\8_RandomNumber.exe.config
+C:\Users\bosco\source\repos\BroCode\8_RandomNumber\8_RandomNumber\bin\Debug\8_RandomNumber.exe
+C:\Users\bosco\source\repos\BroCode\8_RandomNumber\8_RandomNumber\bin\Debug\8_RandomNumber.pdb
+C:\Users\bosco\source\repos\BroCode\8_RandomNumber\8_RandomNumber\obj\Debug\8_RandomNumber.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\8_RandomNumber\8_RandomNumber\obj\Debug\8_RandomNumber.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\8_RandomNumber\8_RandomNumber\obj\Debug\8_RandomNumber.exe
+C:\Users\bosco\source\repos\BroCode\8_RandomNumber\8_RandomNumber\obj\Debug\8_RandomNumber.pdb

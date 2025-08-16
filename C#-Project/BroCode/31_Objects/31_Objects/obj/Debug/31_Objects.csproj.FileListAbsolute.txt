@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\31_Objects\31_Objects\bin\Debug\31_Objects.exe.config
+C:\Users\bosco\source\repos\BroCode\31_Objects\31_Objects\bin\Debug\31_Objects.exe
+C:\Users\bosco\source\repos\BroCode\31_Objects\31_Objects\bin\Debug\31_Objects.pdb
+C:\Users\bosco\source\repos\BroCode\31_Objects\31_Objects\obj\Debug\31_Objects.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\31_Objects\31_Objects\obj\Debug\31_Objects.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\31_Objects\31_Objects\obj\Debug\31_Objects.exe
+C:\Users\bosco\source\repos\BroCode\31_Objects\31_Objects\obj\Debug\31_Objects.pdb

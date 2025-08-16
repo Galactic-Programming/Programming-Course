@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#22_String_Interpolation\#22_String_Interpolation\bin\Debug\#22_String_Interpolation.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#22_String_Interpolation\#22_String_Interpolation\bin\Debug\#22_String_Interpolation.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#22_String_Interpolation\#22_String_Interpolation\bin\Debug\#22_String_Interpolation.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#22_String_Interpolation\#22_String_Interpolation\obj\Debug\#22_String_Interpolation.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#22_String_Interpolation\#22_String_Interpolation\obj\Debug\#22_String_Interpolation.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#22_String_Interpolation\#22_String_Interpolation\obj\Debug\#22_String_Interpolation.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#22_String_Interpolation\#22_String_Interpolation\obj\Debug\#22_String_Interpolation.pdb

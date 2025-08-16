@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\3_Constants\3_Constants\bin\Debug\3_Constants.exe.config
+C:\Users\bosco\source\repos\BroCode\3_Constants\3_Constants\bin\Debug\3_Constants.exe
+C:\Users\bosco\source\repos\BroCode\3_Constants\3_Constants\bin\Debug\3_Constants.pdb
+C:\Users\bosco\source\repos\BroCode\3_Constants\3_Constants\obj\Debug\3_Constants.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\3_Constants\3_Constants\obj\Debug\3_Constants.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\3_Constants\3_Constants\obj\Debug\3_Constants.exe
+C:\Users\bosco\source\repos\BroCode\3_Constants\3_Constants\obj\Debug\3_Constants.pdb

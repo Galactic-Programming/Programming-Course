@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#25_String_Equals_Function\#25_String_Equals_Function\bin\Debug\#25_String_Equals_Function.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#25_String_Equals_Function\#25_String_Equals_Function\bin\Debug\#25_String_Equals_Function.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#25_String_Equals_Function\#25_String_Equals_Function\bin\Debug\#25_String_Equals_Function.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#25_String_Equals_Function\#25_String_Equals_Function\obj\Debug\#25_String_Equals_Function.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#25_String_Equals_Function\#25_String_Equals_Function\obj\Debug\#25_String_Equals_Function.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#25_String_Equals_Function\#25_String_Equals_Function\obj\Debug\#25_String_Equals_Function.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#25_String_Equals_Function\#25_String_Equals_Function\obj\Debug\#25_String_Equals_Function.pdb

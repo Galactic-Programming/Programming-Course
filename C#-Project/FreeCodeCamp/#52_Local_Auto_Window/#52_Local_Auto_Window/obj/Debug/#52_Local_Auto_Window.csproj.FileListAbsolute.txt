@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#52_Local_Auto_Window\#52_Local_Auto_Window\bin\Debug\#52_Local_Auto_Window.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#52_Local_Auto_Window\#52_Local_Auto_Window\bin\Debug\#52_Local_Auto_Window.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#52_Local_Auto_Window\#52_Local_Auto_Window\bin\Debug\#52_Local_Auto_Window.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#52_Local_Auto_Window\#52_Local_Auto_Window\obj\Debug\#52_Local_Auto_Window.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#52_Local_Auto_Window\#52_Local_Auto_Window\obj\Debug\#52_Local_Auto_Window.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#52_Local_Auto_Window\#52_Local_Auto_Window\obj\Debug\#52_Local_Auto_Window.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#52_Local_Auto_Window\#52_Local_Auto_Window\obj\Debug\#52_Local_Auto_Window.pdb

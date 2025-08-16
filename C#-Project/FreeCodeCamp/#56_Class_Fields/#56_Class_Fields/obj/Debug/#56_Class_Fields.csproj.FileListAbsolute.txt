@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#56_Class_Fields\#56_Class_Fields\bin\Debug\#56_Class_Fields.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#56_Class_Fields\#56_Class_Fields\bin\Debug\#56_Class_Fields.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#56_Class_Fields\#56_Class_Fields\bin\Debug\#56_Class_Fields.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#56_Class_Fields\#56_Class_Fields\obj\Debug\#56_Class_Fields.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#56_Class_Fields\#56_Class_Fields\obj\Debug\#56_Class_Fields.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#56_Class_Fields\#56_Class_Fields\obj\Debug\#56_Class_Fields.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#56_Class_Fields\#56_Class_Fields\obj\Debug\#56_Class_Fields.pdb

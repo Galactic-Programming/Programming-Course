@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\18_Program2\18_Program2\obj\Debug\18_Program2.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\18_Program2\18_Program2\obj\Debug\18_Program2.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\18_Program2\18_Program2\bin\Debug\18_Program2.exe.config
+C:\Users\bosco\source\repos\BroCode\18_Program2\18_Program2\bin\Debug\18_Program2.exe
+C:\Users\bosco\source\repos\BroCode\18_Program2\18_Program2\bin\Debug\18_Program2.pdb
+C:\Users\bosco\source\repos\BroCode\18_Program2\18_Program2\obj\Debug\18_Program2.exe
+C:\Users\bosco\source\repos\BroCode\18_Program2\18_Program2\obj\Debug\18_Program2.pdb

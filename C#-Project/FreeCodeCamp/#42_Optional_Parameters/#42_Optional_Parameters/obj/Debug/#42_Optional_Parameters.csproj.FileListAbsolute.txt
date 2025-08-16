@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#42_Optional_Parameters\#42_Optional_Parameters\bin\Debug\#42_Optional_Parameters.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#42_Optional_Parameters\#42_Optional_Parameters\bin\Debug\#42_Optional_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#42_Optional_Parameters\#42_Optional_Parameters\bin\Debug\#42_Optional_Parameters.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#42_Optional_Parameters\#42_Optional_Parameters\obj\Debug\#42_Optional_Parameters.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#42_Optional_Parameters\#42_Optional_Parameters\obj\Debug\#42_Optional_Parameters.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#42_Optional_Parameters\#42_Optional_Parameters\obj\Debug\#42_Optional_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#42_Optional_Parameters\#42_Optional_Parameters\obj\Debug\#42_Optional_Parameters.pdb

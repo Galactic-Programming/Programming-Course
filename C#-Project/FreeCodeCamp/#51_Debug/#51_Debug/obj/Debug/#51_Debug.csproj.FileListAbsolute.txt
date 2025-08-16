@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#51_Debug\#51_Debug\bin\Debug\#51_Debug.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#51_Debug\#51_Debug\bin\Debug\#51_Debug.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#51_Debug\#51_Debug\bin\Debug\#51_Debug.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#51_Debug\#51_Debug\obj\Debug\#51_Debug.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#51_Debug\#51_Debug\obj\Debug\#51_Debug.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#51_Debug\#51_Debug\obj\Debug\#51_Debug.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#51_Debug\#51_Debug\obj\Debug\#51_Debug.pdb

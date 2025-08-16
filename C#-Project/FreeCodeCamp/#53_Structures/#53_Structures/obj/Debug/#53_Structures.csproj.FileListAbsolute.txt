@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#53_Structures\#53_Structures\bin\Debug\#53_Structures.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#53_Structures\#53_Structures\bin\Debug\#53_Structures.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#53_Structures\#53_Structures\bin\Debug\#53_Structures.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#53_Structures\#53_Structures\obj\Debug\#53_Structures.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#53_Structures\#53_Structures\obj\Debug\#53_Structures.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#53_Structures\#53_Structures\obj\Debug\#53_Structures.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#53_Structures\#53_Structures\obj\Debug\#53_Structures.pdb

@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#33_Array_IndexOf\#33_Array_IndexOf\bin\Debug\#33_Array_IndexOf.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#33_Array_IndexOf\#33_Array_IndexOf\bin\Debug\#33_Array_IndexOf.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#33_Array_IndexOf\#33_Array_IndexOf\bin\Debug\#33_Array_IndexOf.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#33_Array_IndexOf\#33_Array_IndexOf\obj\Debug\#33_Array_IndexOf.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#33_Array_IndexOf\#33_Array_IndexOf\obj\Debug\#33_Array_IndexOf.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#33_Array_IndexOf\#33_Array_IndexOf\obj\Debug\#33_Array_IndexOf.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#33_Array_IndexOf\#33_Array_IndexOf\obj\Debug\#33_Array_IndexOf.pdb

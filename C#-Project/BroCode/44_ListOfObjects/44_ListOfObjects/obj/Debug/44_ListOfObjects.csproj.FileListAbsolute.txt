@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\44_ListOfObjects\44_ListOfObjects\bin\Debug\44_ListOfObjects.exe.config
+C:\Users\bosco\source\repos\BroCode\44_ListOfObjects\44_ListOfObjects\bin\Debug\44_ListOfObjects.exe
+C:\Users\bosco\source\repos\BroCode\44_ListOfObjects\44_ListOfObjects\bin\Debug\44_ListOfObjects.pdb
+C:\Users\bosco\source\repos\BroCode\44_ListOfObjects\44_ListOfObjects\obj\Debug\44_ListOfObjects.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\44_ListOfObjects\44_ListOfObjects\obj\Debug\44_ListOfObjects.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\44_ListOfObjects\44_ListOfObjects\obj\Debug\44_ListOfObjects.exe
+C:\Users\bosco\source\repos\BroCode\44_ListOfObjects\44_ListOfObjects\obj\Debug\44_ListOfObjects.pdb

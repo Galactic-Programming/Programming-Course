@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#37_Array_Of_Multiples\#37_Array_Of_Multiples\bin\Debug\#37_Array_Of_Multiples.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#37_Array_Of_Multiples\#37_Array_Of_Multiples\bin\Debug\#37_Array_Of_Multiples.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#37_Array_Of_Multiples\#37_Array_Of_Multiples\bin\Debug\#37_Array_Of_Multiples.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#37_Array_Of_Multiples\#37_Array_Of_Multiples\obj\Debug\#37_Array_Of_Multiples.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#37_Array_Of_Multiples\#37_Array_Of_Multiples\obj\Debug\#37_Array_Of_Multiples.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#37_Array_Of_Multiples\#37_Array_Of_Multiples\obj\Debug\#37_Array_Of_Multiples.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#37_Array_Of_Multiples\#37_Array_Of_Multiples\obj\Debug\#37_Array_Of_Multiples.pdb

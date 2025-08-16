@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#8_ConstantsKeyword\#8_ConstantsKeyword\bin\Debug\#8_ConstantsKeyword.exe.config
+C:\Users\bosco\source\repos\#8_ConstantsKeyword\#8_ConstantsKeyword\bin\Debug\#8_ConstantsKeyword.exe
+C:\Users\bosco\source\repos\#8_ConstantsKeyword\#8_ConstantsKeyword\bin\Debug\#8_ConstantsKeyword.pdb
+C:\Users\bosco\source\repos\#8_ConstantsKeyword\#8_ConstantsKeyword\obj\Debug\#8_ConstantsKeyword.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#8_ConstantsKeyword\#8_ConstantsKeyword\obj\Debug\#8_ConstantsKeyword.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#8_ConstantsKeyword\#8_ConstantsKeyword\obj\Debug\#8_ConstantsKeyword.exe
+C:\Users\bosco\source\repos\#8_ConstantsKeyword\#8_ConstantsKeyword\obj\Debug\#8_ConstantsKeyword.pdb

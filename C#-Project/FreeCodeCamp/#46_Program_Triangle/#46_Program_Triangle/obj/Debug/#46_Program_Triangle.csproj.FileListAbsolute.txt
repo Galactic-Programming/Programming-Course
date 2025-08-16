@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#46_Program_Triangle\#46_Program_Triangle\bin\Debug\#46_Program_Triangle.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#46_Program_Triangle\#46_Program_Triangle\bin\Debug\#46_Program_Triangle.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#46_Program_Triangle\#46_Program_Triangle\bin\Debug\#46_Program_Triangle.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#46_Program_Triangle\#46_Program_Triangle\obj\Debug\#46_Program_Triangle.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#46_Program_Triangle\#46_Program_Triangle\obj\Debug\#46_Program_Triangle.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#46_Program_Triangle\#46_Program_Triangle\obj\Debug\#46_Program_Triangle.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#46_Program_Triangle\#46_Program_Triangle\obj\Debug\#46_Program_Triangle.pdb

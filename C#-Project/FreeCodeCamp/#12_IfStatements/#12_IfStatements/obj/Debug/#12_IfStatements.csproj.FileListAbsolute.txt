@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#12_IfStatements\#12_IfStatements\bin\Debug\#12_IfStatements.exe.config
+C:\Users\bosco\source\repos\#12_IfStatements\#12_IfStatements\bin\Debug\#12_IfStatements.exe
+C:\Users\bosco\source\repos\#12_IfStatements\#12_IfStatements\bin\Debug\#12_IfStatements.pdb
+C:\Users\bosco\source\repos\#12_IfStatements\#12_IfStatements\obj\Debug\#12_IfStatements.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#12_IfStatements\#12_IfStatements\obj\Debug\#12_IfStatements.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#12_IfStatements\#12_IfStatements\obj\Debug\#12_IfStatements.exe
+C:\Users\bosco\source\repos\#12_IfStatements\#12_IfStatements\obj\Debug\#12_IfStatements.pdb

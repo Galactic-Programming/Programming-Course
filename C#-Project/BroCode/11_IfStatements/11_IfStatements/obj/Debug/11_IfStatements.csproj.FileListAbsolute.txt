@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\11_IfStatements\11_IfStatements\bin\Debug\11_IfStatements.exe.config
+C:\Users\bosco\source\repos\BroCode\11_IfStatements\11_IfStatements\bin\Debug\11_IfStatements.exe
+C:\Users\bosco\source\repos\BroCode\11_IfStatements\11_IfStatements\bin\Debug\11_IfStatements.pdb
+C:\Users\bosco\source\repos\BroCode\11_IfStatements\11_IfStatements\obj\Debug\11_IfStatements.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\11_IfStatements\11_IfStatements\obj\Debug\11_IfStatements.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\11_IfStatements\11_IfStatements\obj\Debug\11_IfStatements.exe
+C:\Users\bosco\source\repos\BroCode\11_IfStatements\11_IfStatements\obj\Debug\11_IfStatements.pdb

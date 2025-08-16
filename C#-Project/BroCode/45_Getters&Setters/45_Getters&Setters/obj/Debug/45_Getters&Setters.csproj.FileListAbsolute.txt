@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\45_Getters&Setters\45_Getters&Setters\bin\Debug\45_Getters&Setters.exe.config
+C:\Users\bosco\source\repos\BroCode\45_Getters&Setters\45_Getters&Setters\bin\Debug\45_Getters&Setters.exe
+C:\Users\bosco\source\repos\BroCode\45_Getters&Setters\45_Getters&Setters\bin\Debug\45_Getters&Setters.pdb
+C:\Users\bosco\source\repos\BroCode\45_Getters&Setters\45_Getters&Setters\obj\Debug\45_Getters&Setters.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\45_Getters&Setters\45_Getters&Setters\obj\Debug\45_Getters&Setters.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\45_Getters&Setters\45_Getters&Setters\obj\Debug\45_Getters&Setters.exe
+C:\Users\bosco\source\repos\BroCode\45_Getters&Setters\45_Getters&Setters\obj\Debug\45_Getters&Setters.pdb

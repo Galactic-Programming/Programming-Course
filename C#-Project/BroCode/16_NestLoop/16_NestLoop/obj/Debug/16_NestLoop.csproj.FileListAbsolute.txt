@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\16_NestLoop\16_NestLoop\bin\Debug\16_NestLoop.exe.config
+C:\Users\bosco\source\repos\BroCode\16_NestLoop\16_NestLoop\bin\Debug\16_NestLoop.exe
+C:\Users\bosco\source\repos\BroCode\16_NestLoop\16_NestLoop\bin\Debug\16_NestLoop.pdb
+C:\Users\bosco\source\repos\BroCode\16_NestLoop\16_NestLoop\obj\Debug\16_NestLoop.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\16_NestLoop\16_NestLoop\obj\Debug\16_NestLoop.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\16_NestLoop\16_NestLoop\obj\Debug\16_NestLoop.exe
+C:\Users\bosco\source\repos\BroCode\16_NestLoop\16_NestLoop\obj\Debug\16_NestLoop.pdb

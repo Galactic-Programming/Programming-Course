@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\30_Classes\30_Classes\bin\Debug\30_Classes.exe.config
+C:\Users\bosco\source\repos\BroCode\30_Classes\30_Classes\bin\Debug\30_Classes.exe
+C:\Users\bosco\source\repos\BroCode\30_Classes\30_Classes\bin\Debug\30_Classes.pdb
+C:\Users\bosco\source\repos\BroCode\30_Classes\30_Classes\obj\Debug\30_Classes.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\30_Classes\30_Classes\obj\Debug\30_Classes.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\30_Classes\30_Classes\obj\Debug\30_Classes.exe
+C:\Users\bosco\source\repos\BroCode\30_Classes\30_Classes\obj\Debug\30_Classes.pdb

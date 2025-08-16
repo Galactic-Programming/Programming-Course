@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#26_String_Iteration_Looping\#26_String_Iteration_Looping\obj\Debug\#26_String_Iteration_Looping.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#26_String_Iteration_Looping\#26_String_Iteration_Looping\obj\Debug\#26_String_Iteration_Looping.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#26_String_Iteration_Looping\#26_String_Iteration_Looping\bin\Debug\#26_String_Iteration_Looping.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#26_String_Iteration_Looping\#26_String_Iteration_Looping\bin\Debug\#26_String_Iteration_Looping.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#26_String_Iteration_Looping\#26_String_Iteration_Looping\bin\Debug\#26_String_Iteration_Looping.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#26_String_Iteration_Looping\#26_String_Iteration_Looping\obj\Debug\#26_String_Iteration_Looping.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#26_String_Iteration_Looping\#26_String_Iteration_Looping\obj\Debug\#26_String_Iteration_Looping.pdb

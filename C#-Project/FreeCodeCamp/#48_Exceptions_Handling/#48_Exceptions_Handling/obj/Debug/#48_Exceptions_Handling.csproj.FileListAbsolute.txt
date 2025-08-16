@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#48_Exceptions_Handling\#48_Exceptions_Handling\bin\Debug\#48_Exceptions_Handling.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#48_Exceptions_Handling\#48_Exceptions_Handling\bin\Debug\#48_Exceptions_Handling.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#48_Exceptions_Handling\#48_Exceptions_Handling\bin\Debug\#48_Exceptions_Handling.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#48_Exceptions_Handling\#48_Exceptions_Handling\obj\Debug\#48_Exceptions_Handling.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#48_Exceptions_Handling\#48_Exceptions_Handling\obj\Debug\#48_Exceptions_Handling.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#48_Exceptions_Handling\#48_Exceptions_Handling\obj\Debug\#48_Exceptions_Handling.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#48_Exceptions_Handling\#48_Exceptions_Handling\obj\Debug\#48_Exceptions_Handling.pdb

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bosco\\source\\repos\\#5_Operators\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB541477-4B9C-4194-B48D-DF725163C9CF}|#5_Operators\\#5_Operators.csproj|c:\\users\\bosco\\source\\repos\\#5_operators\\#5_operators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB541477-4B9C-4194-B48D-DF725163C9CF}|#5_Operators\\#5_Operators.csproj|solutionrelative:#5_operators\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bosco\\source\\repos\\#5_Operators\\#5_Operators\\Program.cs",
+              "RelativeDocumentMoniker": "#5_Operators\\Program.cs",
+              "ToolTip": "C:\\Users\\bosco\\source\\repos\\#5_Operators\\#5_Operators\\Program.cs",
+              "RelativeToolTip": "#5_Operators\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T12:11:53.729Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

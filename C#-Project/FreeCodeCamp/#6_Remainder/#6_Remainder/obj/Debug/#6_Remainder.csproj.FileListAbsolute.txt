@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#6_Remainder\#6_Remainder\bin\Debug\#6_Remainder.exe.config
+C:\Users\bosco\source\repos\#6_Remainder\#6_Remainder\bin\Debug\#6_Remainder.exe
+C:\Users\bosco\source\repos\#6_Remainder\#6_Remainder\bin\Debug\#6_Remainder.pdb
+C:\Users\bosco\source\repos\#6_Remainder\#6_Remainder\obj\Debug\#6_Remainder.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#6_Remainder\#6_Remainder\obj\Debug\#6_Remainder.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#6_Remainder\#6_Remainder\obj\Debug\#6_Remainder.exe
+C:\Users\bosco\source\repos\#6_Remainder\#6_Remainder\obj\Debug\#6_Remainder.pdb

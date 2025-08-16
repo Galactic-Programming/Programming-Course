@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#32_Array_Clearing\#32_Array_Clearing\bin\Debug\#32_Array_Clearing.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#32_Array_Clearing\#32_Array_Clearing\bin\Debug\#32_Array_Clearing.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#32_Array_Clearing\#32_Array_Clearing\bin\Debug\#32_Array_Clearing.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#32_Array_Clearing\#32_Array_Clearing\obj\Debug\#32_Array_Clearing.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#32_Array_Clearing\#32_Array_Clearing\obj\Debug\#32_Array_Clearing.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#32_Array_Clearing\#32_Array_Clearing\obj\Debug\#32_Array_Clearing.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#32_Array_Clearing\#32_Array_Clearing\obj\Debug\#32_Array_Clearing.pdb

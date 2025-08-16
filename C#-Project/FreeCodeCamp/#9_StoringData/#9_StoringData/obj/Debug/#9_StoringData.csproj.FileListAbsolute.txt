@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#9_StoringData\#9_StoringData\bin\Debug\#9_StoringData.exe.config
+C:\Users\bosco\source\repos\#9_StoringData\#9_StoringData\bin\Debug\#9_StoringData.exe
+C:\Users\bosco\source\repos\#9_StoringData\#9_StoringData\bin\Debug\#9_StoringData.pdb
+C:\Users\bosco\source\repos\#9_StoringData\#9_StoringData\obj\Debug\#9_StoringData.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#9_StoringData\#9_StoringData\obj\Debug\#9_StoringData.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#9_StoringData\#9_StoringData\obj\Debug\#9_StoringData.exe
+C:\Users\bosco\source\repos\#9_StoringData\#9_StoringData\obj\Debug\#9_StoringData.pdb

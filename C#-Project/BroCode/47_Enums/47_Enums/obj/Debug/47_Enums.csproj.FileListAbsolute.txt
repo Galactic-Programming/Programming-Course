@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\47_Enums\47_Enums\bin\Debug\47_Enums.exe.config
+C:\Users\bosco\source\repos\BroCode\47_Enums\47_Enums\bin\Debug\47_Enums.exe
+C:\Users\bosco\source\repos\BroCode\47_Enums\47_Enums\bin\Debug\47_Enums.pdb
+C:\Users\bosco\source\repos\BroCode\47_Enums\47_Enums\obj\Debug\47_Enums.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\47_Enums\47_Enums\obj\Debug\47_Enums.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\47_Enums\47_Enums\obj\Debug\47_Enums.exe
+C:\Users\bosco\source\repos\BroCode\47_Enums\47_Enums\obj\Debug\47_Enums.pdb

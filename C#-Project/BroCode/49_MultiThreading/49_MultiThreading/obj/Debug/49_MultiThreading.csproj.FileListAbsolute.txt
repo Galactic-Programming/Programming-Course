@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\49_MultiThreading\49_MultiThreading\bin\Debug\49_MultiThreading.exe.config
+C:\Users\bosco\source\repos\BroCode\49_MultiThreading\49_MultiThreading\bin\Debug\49_MultiThreading.exe
+C:\Users\bosco\source\repos\BroCode\49_MultiThreading\49_MultiThreading\bin\Debug\49_MultiThreading.pdb
+C:\Users\bosco\source\repos\BroCode\49_MultiThreading\49_MultiThreading\obj\Debug\49_MultiThreading.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\49_MultiThreading\49_MultiThreading\obj\Debug\49_MultiThreading.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\49_MultiThreading\49_MultiThreading\obj\Debug\49_MultiThreading.exe
+C:\Users\bosco\source\repos\BroCode\49_MultiThreading\49_MultiThreading\obj\Debug\49_MultiThreading.pdb

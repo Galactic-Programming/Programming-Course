@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#24_Empty_String\#24_Empty_String\bin\Debug\#24_Empty_String.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#24_Empty_String\#24_Empty_String\bin\Debug\#24_Empty_String.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#24_Empty_String\#24_Empty_String\bin\Debug\#24_Empty_String.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#24_Empty_String\#24_Empty_String\obj\Debug\#24_Empty_String.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#24_Empty_String\#24_Empty_String\obj\Debug\#24_Empty_String.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#24_Empty_String\#24_Empty_String\obj\Debug\#24_Empty_String.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#24_Empty_String\#24_Empty_String\obj\Debug\#24_Empty_String.pdb

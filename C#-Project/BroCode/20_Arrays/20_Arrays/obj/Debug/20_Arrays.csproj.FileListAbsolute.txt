@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\20_Arrays\20_Arrays\bin\Debug\20_Arrays.exe.config
+C:\Users\bosco\source\repos\BroCode\20_Arrays\20_Arrays\bin\Debug\20_Arrays.exe
+C:\Users\bosco\source\repos\BroCode\20_Arrays\20_Arrays\bin\Debug\20_Arrays.pdb
+C:\Users\bosco\source\repos\BroCode\20_Arrays\20_Arrays\obj\Debug\20_Arrays.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\20_Arrays\20_Arrays\obj\Debug\20_Arrays.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\20_Arrays\20_Arrays\obj\Debug\20_Arrays.exe
+C:\Users\bosco\source\repos\BroCode\20_Arrays\20_Arrays\obj\Debug\20_Arrays.pdb

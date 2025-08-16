@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\42_Interfaces\42_Interfaces\bin\Debug\42_Interfaces.exe.config
+C:\Users\bosco\source\repos\BroCode\42_Interfaces\42_Interfaces\bin\Debug\42_Interfaces.exe
+C:\Users\bosco\source\repos\BroCode\42_Interfaces\42_Interfaces\bin\Debug\42_Interfaces.pdb
+C:\Users\bosco\source\repos\BroCode\42_Interfaces\42_Interfaces\obj\Debug\42_Interfaces.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\42_Interfaces\42_Interfaces\obj\Debug\42_Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\42_Interfaces\42_Interfaces\obj\Debug\42_Interfaces.exe
+C:\Users\bosco\source\repos\BroCode\42_Interfaces\42_Interfaces\obj\Debug\42_Interfaces.pdb

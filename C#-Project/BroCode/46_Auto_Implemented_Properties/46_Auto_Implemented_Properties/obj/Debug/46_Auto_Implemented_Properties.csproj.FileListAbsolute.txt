@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\46_Auto_Implemented_Properties\46_Auto_Implemented_Properties\obj\Debug\46_Auto_Implemented_Properties.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\46_Auto_Implemented_Properties\46_Auto_Implemented_Properties\obj\Debug\46_Auto_Implemented_Properties.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\46_Auto_Implemented_Properties\46_Auto_Implemented_Properties\bin\Debug\46_Auto_Implemented_Properties.exe.config
+C:\Users\bosco\source\repos\BroCode\46_Auto_Implemented_Properties\46_Auto_Implemented_Properties\bin\Debug\46_Auto_Implemented_Properties.exe
+C:\Users\bosco\source\repos\BroCode\46_Auto_Implemented_Properties\46_Auto_Implemented_Properties\bin\Debug\46_Auto_Implemented_Properties.pdb
+C:\Users\bosco\source\repos\BroCode\46_Auto_Implemented_Properties\46_Auto_Implemented_Properties\obj\Debug\46_Auto_Implemented_Properties.exe
+C:\Users\bosco\source\repos\BroCode\46_Auto_Implemented_Properties\46_Auto_Implemented_Properties\obj\Debug\46_Auto_Implemented_Properties.pdb

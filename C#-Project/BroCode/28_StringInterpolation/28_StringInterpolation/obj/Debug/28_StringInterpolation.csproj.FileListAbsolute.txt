@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\28_StringInterpolation\28_StringInterpolation\bin\Debug\28_StringInterpolation.exe.config
+C:\Users\bosco\source\repos\BroCode\28_StringInterpolation\28_StringInterpolation\bin\Debug\28_StringInterpolation.exe
+C:\Users\bosco\source\repos\BroCode\28_StringInterpolation\28_StringInterpolation\bin\Debug\28_StringInterpolation.pdb
+C:\Users\bosco\source\repos\BroCode\28_StringInterpolation\28_StringInterpolation\obj\Debug\28_StringInterpolation.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\28_StringInterpolation\28_StringInterpolation\obj\Debug\28_StringInterpolation.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\28_StringInterpolation\28_StringInterpolation\obj\Debug\28_StringInterpolation.exe
+C:\Users\bosco\source\repos\BroCode\28_StringInterpolation\28_StringInterpolation\obj\Debug\28_StringInterpolation.pdb

@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#4_BooleanDataType\#4_BooleanDataType\bin\Debug\#4_BooleanDataType.exe.config
+C:\Users\bosco\source\repos\#4_BooleanDataType\#4_BooleanDataType\bin\Debug\#4_BooleanDataType.exe
+C:\Users\bosco\source\repos\#4_BooleanDataType\#4_BooleanDataType\bin\Debug\#4_BooleanDataType.pdb
+C:\Users\bosco\source\repos\#4_BooleanDataType\#4_BooleanDataType\obj\Debug\#4_BooleanDataType.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#4_BooleanDataType\#4_BooleanDataType\obj\Debug\#4_BooleanDataType.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#4_BooleanDataType\#4_BooleanDataType\obj\Debug\#4_BooleanDataType.exe
+C:\Users\bosco\source\repos\#4_BooleanDataType\#4_BooleanDataType\obj\Debug\#4_BooleanDataType.pdb

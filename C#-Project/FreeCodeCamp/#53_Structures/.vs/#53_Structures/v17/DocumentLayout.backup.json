@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bosco\\source\\repos\\FreeCodeCamp\\#53_Structures\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC88309-7E9F-417F-9655-D5393A0191CF}|#53_Structures\\#53_Structures.csproj|c:\\users\\bosco\\source\\repos\\freecodecamp\\#53_structures\\#53_structures\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC88309-7E9F-417F-9655-D5393A0191CF}|#53_Structures\\#53_Structures.csproj|solutionrelative:#53_structures\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bosco\\source\\repos\\FreeCodeCamp\\#53_Structures\\#53_Structures\\Program.cs",
+              "RelativeDocumentMoniker": "#53_Structures\\Program.cs",
+              "ToolTip": "C:\\Users\\bosco\\source\\repos\\FreeCodeCamp\\#53_Structures\\#53_Structures\\Program.cs",
+              "RelativeToolTip": "#53_Structures\\Program.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T16:13:04.705Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

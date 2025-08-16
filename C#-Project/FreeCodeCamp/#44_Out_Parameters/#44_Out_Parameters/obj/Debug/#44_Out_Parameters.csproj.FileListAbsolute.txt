@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#44_Out_Parameters\#44_Out_Parameters\bin\Debug\#44_Out_Parameters.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#44_Out_Parameters\#44_Out_Parameters\bin\Debug\#44_Out_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#44_Out_Parameters\#44_Out_Parameters\bin\Debug\#44_Out_Parameters.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#44_Out_Parameters\#44_Out_Parameters\obj\Debug\#44_Out_Parameters.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#44_Out_Parameters\#44_Out_Parameters\obj\Debug\#44_Out_Parameters.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#44_Out_Parameters\#44_Out_Parameters\obj\Debug\#44_Out_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#44_Out_Parameters\#44_Out_Parameters\obj\Debug\#44_Out_Parameters.pdb

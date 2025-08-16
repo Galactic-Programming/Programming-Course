@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#50_Custom_TryParse\#50_Custom_TryParse\bin\Debug\#50_Custom_TryParse.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#50_Custom_TryParse\#50_Custom_TryParse\bin\Debug\#50_Custom_TryParse.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#50_Custom_TryParse\#50_Custom_TryParse\bin\Debug\#50_Custom_TryParse.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#50_Custom_TryParse\#50_Custom_TryParse\obj\Debug\#50_Custom_TryParse.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#50_Custom_TryParse\#50_Custom_TryParse\obj\Debug\#50_Custom_TryParse.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#50_Custom_TryParse\#50_Custom_TryParse\obj\Debug\#50_Custom_TryParse.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#50_Custom_TryParse\#50_Custom_TryParse\obj\Debug\#50_Custom_TryParse.pdb

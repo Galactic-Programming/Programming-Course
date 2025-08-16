@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#2_TextBasedDataTypes\#2_TextBasedDataTypes\bin\Debug\#2_TextBasedDataTypes.exe.config
+C:\Users\bosco\source\repos\#2_TextBasedDataTypes\#2_TextBasedDataTypes\bin\Debug\#2_TextBasedDataTypes.exe
+C:\Users\bosco\source\repos\#2_TextBasedDataTypes\#2_TextBasedDataTypes\bin\Debug\#2_TextBasedDataTypes.pdb
+C:\Users\bosco\source\repos\#2_TextBasedDataTypes\#2_TextBasedDataTypes\obj\Debug\#2_TextBasedDataTypes.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#2_TextBasedDataTypes\#2_TextBasedDataTypes\obj\Debug\#2_TextBasedDataTypes.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#2_TextBasedDataTypes\#2_TextBasedDataTypes\obj\Debug\#2_TextBasedDataTypes.exe
+C:\Users\bosco\source\repos\#2_TextBasedDataTypes\#2_TextBasedDataTypes\obj\Debug\#2_TextBasedDataTypes.pdb

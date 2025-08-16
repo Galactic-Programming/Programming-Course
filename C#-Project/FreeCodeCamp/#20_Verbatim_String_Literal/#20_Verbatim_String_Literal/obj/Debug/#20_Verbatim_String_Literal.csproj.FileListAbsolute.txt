@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#20_Verbatim_String_Literal\#20_Verbatim_String_Literal\bin\Debug\#20_Verbatim_String_Literal.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#20_Verbatim_String_Literal\#20_Verbatim_String_Literal\bin\Debug\#20_Verbatim_String_Literal.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#20_Verbatim_String_Literal\#20_Verbatim_String_Literal\bin\Debug\#20_Verbatim_String_Literal.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#20_Verbatim_String_Literal\#20_Verbatim_String_Literal\obj\Debug\#20_Verbatim_String_Literal.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#20_Verbatim_String_Literal\#20_Verbatim_String_Literal\obj\Debug\#20_Verbatim_String_Literal.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#20_Verbatim_String_Literal\#20_Verbatim_String_Literal\obj\Debug\#20_Verbatim_String_Literal.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#20_Verbatim_String_Literal\#20_Verbatim_String_Literal\obj\Debug\#20_Verbatim_String_Literal.pdb

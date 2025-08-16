@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\10_StringMethod\10_StringMethod\bin\Debug\10_StringMethod.exe.config
+C:\Users\bosco\source\repos\BroCode\10_StringMethod\10_StringMethod\bin\Debug\10_StringMethod.exe
+C:\Users\bosco\source\repos\BroCode\10_StringMethod\10_StringMethod\bin\Debug\10_StringMethod.pdb
+C:\Users\bosco\source\repos\BroCode\10_StringMethod\10_StringMethod\obj\Debug\10_StringMethod.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\10_StringMethod\10_StringMethod\obj\Debug\10_StringMethod.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\10_StringMethod\10_StringMethod\obj\Debug\10_StringMethod.exe
+C:\Users\bosco\source\repos\BroCode\10_StringMethod\10_StringMethod\obj\Debug\10_StringMethod.pdb

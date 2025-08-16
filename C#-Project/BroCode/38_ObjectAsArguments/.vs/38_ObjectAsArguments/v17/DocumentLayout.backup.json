@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bosco\\source\\repos\\BroCode\\38_ObjectAsArguments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDFE18C5-A3A8-4C89-BFD3-34F59ADD6DBE}|38_ObjectAsArguments\\38_ObjectAsArguments.csproj|c:\\users\\bosco\\source\\repos\\brocode\\38_objectasarguments\\38_objectasarguments\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDFE18C5-A3A8-4C89-BFD3-34F59ADD6DBE}|38_ObjectAsArguments\\38_ObjectAsArguments.csproj|solutionrelative:38_objectasarguments\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bosco\\source\\repos\\BroCode\\38_ObjectAsArguments\\38_ObjectAsArguments\\Program.cs",
+              "RelativeDocumentMoniker": "38_ObjectAsArguments\\Program.cs",
+              "ToolTip": "C:\\Users\\bosco\\source\\repos\\BroCode\\38_ObjectAsArguments\\38_ObjectAsArguments\\Program.cs",
+              "RelativeToolTip": "38_ObjectAsArguments\\Program.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAwwDgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T05:34:40.73Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

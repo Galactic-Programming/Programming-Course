@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bosco\\source\\repos\\FreeCodeCamp\\#27_String_IsNull_Or_Empty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7713CE7-6150-47F5-AE28-D59616EBB822}|#27_String_IsNull_Or_Empty\\#27_String_IsNull_Or_Empty.csproj|c:\\users\\bosco\\source\\repos\\freecodecamp\\#27_string_isnull_or_empty\\#27_string_isnull_or_empty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7713CE7-6150-47F5-AE28-D59616EBB822}|#27_String_IsNull_Or_Empty\\#27_String_IsNull_Or_Empty.csproj|solutionrelative:#27_string_isnull_or_empty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bosco\\source\\repos\\FreeCodeCamp\\#27_String_IsNull_Or_Empty\\#27_String_IsNull_Or_Empty\\Program.cs",
+              "RelativeDocumentMoniker": "#27_String_IsNull_Or_Empty\\Program.cs",
+              "ToolTip": "C:\\Users\\bosco\\source\\repos\\FreeCodeCamp\\#27_String_IsNull_Or_Empty\\#27_String_IsNull_Or_Empty\\Program.cs",
+              "RelativeToolTip": "#27_String_IsNull_Or_Empty\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwB8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T13:28:51.911Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

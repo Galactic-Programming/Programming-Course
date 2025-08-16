@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#30_Array\#30_Array\bin\Debug\#30_Array.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#30_Array\#30_Array\bin\Debug\#30_Array.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#30_Array\#30_Array\bin\Debug\#30_Array.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#30_Array\#30_Array\obj\Debug\#30_Array.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#30_Array\#30_Array\obj\Debug\#30_Array.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#30_Array\#30_Array\obj\Debug\#30_Array.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#30_Array\#30_Array\obj\Debug\#30_Array.pdb

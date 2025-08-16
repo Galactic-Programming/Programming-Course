@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\33_Static\33_Static\obj\Debug\33_Static.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\33_Static\33_Static\obj\Debug\33_Static.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\33_Static\33_Static\bin\Debug\33_Static.exe.config
+C:\Users\bosco\source\repos\BroCode\33_Static\33_Static\bin\Debug\33_Static.exe
+C:\Users\bosco\source\repos\BroCode\33_Static\33_Static\bin\Debug\33_Static.pdb
+C:\Users\bosco\source\repos\BroCode\33_Static\33_Static\obj\Debug\33_Static.exe
+C:\Users\bosco\source\repos\BroCode\33_Static\33_Static\obj\Debug\33_Static.pdb

@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\32_Constructors\32_Constructors\bin\Debug\32_Constructors.exe.config
+C:\Users\bosco\source\repos\BroCode\32_Constructors\32_Constructors\bin\Debug\32_Constructors.exe
+C:\Users\bosco\source\repos\BroCode\32_Constructors\32_Constructors\bin\Debug\32_Constructors.pdb
+C:\Users\bosco\source\repos\BroCode\32_Constructors\32_Constructors\obj\Debug\32_Constructors.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\32_Constructors\32_Constructors\obj\Debug\32_Constructors.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\32_Constructors\32_Constructors\obj\Debug\32_Constructors.exe
+C:\Users\bosco\source\repos\BroCode\32_Constructors\32_Constructors\obj\Debug\32_Constructors.pdb

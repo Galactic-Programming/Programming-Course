@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\27_ConditionalOperators\27_ConditionalOperators\bin\Debug\27_ConditionalOperators.exe.config
+C:\Users\bosco\source\repos\BroCode\27_ConditionalOperators\27_ConditionalOperators\bin\Debug\27_ConditionalOperators.exe
+C:\Users\bosco\source\repos\BroCode\27_ConditionalOperators\27_ConditionalOperators\bin\Debug\27_ConditionalOperators.pdb
+C:\Users\bosco\source\repos\BroCode\27_ConditionalOperators\27_ConditionalOperators\obj\Debug\27_ConditionalOperators.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\27_ConditionalOperators\27_ConditionalOperators\obj\Debug\27_ConditionalOperators.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\27_ConditionalOperators\27_ConditionalOperators\obj\Debug\27_ConditionalOperators.exe
+C:\Users\bosco\source\repos\BroCode\27_ConditionalOperators\27_ConditionalOperators\obj\Debug\27_ConditionalOperators.pdb

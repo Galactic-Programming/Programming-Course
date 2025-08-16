@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\4_TypeCasting\4_TypeCasting\bin\Debug\4_TypeCasting.exe.config
+C:\Users\bosco\source\repos\BroCode\4_TypeCasting\4_TypeCasting\bin\Debug\4_TypeCasting.exe
+C:\Users\bosco\source\repos\BroCode\4_TypeCasting\4_TypeCasting\bin\Debug\4_TypeCasting.pdb
+C:\Users\bosco\source\repos\BroCode\4_TypeCasting\4_TypeCasting\obj\Debug\4_TypeCasting.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\4_TypeCasting\4_TypeCasting\obj\Debug\4_TypeCasting.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\4_TypeCasting\4_TypeCasting\obj\Debug\4_TypeCasting.exe
+C:\Users\bosco\source\repos\BroCode\4_TypeCasting\4_TypeCasting\obj\Debug\4_TypeCasting.pdb

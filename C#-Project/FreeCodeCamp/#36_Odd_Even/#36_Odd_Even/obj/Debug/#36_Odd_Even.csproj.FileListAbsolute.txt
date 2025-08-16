@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#36_Odd_Even\#36_Odd_Even\bin\Debug\#36_Odd_Even.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#36_Odd_Even\#36_Odd_Even\bin\Debug\#36_Odd_Even.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#36_Odd_Even\#36_Odd_Even\bin\Debug\#36_Odd_Even.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#36_Odd_Even\#36_Odd_Even\obj\Debug\#36_Odd_Even.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#36_Odd_Even\#36_Odd_Even\obj\Debug\#36_Odd_Even.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#36_Odd_Even\#36_Odd_Even\obj\Debug\#36_Odd_Even.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#36_Odd_Even\#36_Odd_Even\obj\Debug\#36_Odd_Even.pdb

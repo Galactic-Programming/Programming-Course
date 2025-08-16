@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#58_Class_Properties\#58_Class_Properties\bin\Debug\#58_Class_Properties.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#58_Class_Properties\#58_Class_Properties\bin\Debug\#58_Class_Properties.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#58_Class_Properties\#58_Class_Properties\bin\Debug\#58_Class_Properties.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#58_Class_Properties\#58_Class_Properties\obj\Debug\#58_Class_Properties.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#58_Class_Properties\#58_Class_Properties\obj\Debug\#58_Class_Properties.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#58_Class_Properties\#58_Class_Properties\obj\Debug\#58_Class_Properties.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#58_Class_Properties\#58_Class_Properties\obj\Debug\#58_Class_Properties.pdb

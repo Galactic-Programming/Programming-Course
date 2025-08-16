@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\39_MethodOverRiding\39_MethodOverRiding\bin\Debug\39_MethodOverRiding.exe.config
+C:\Users\bosco\source\repos\BroCode\39_MethodOverRiding\39_MethodOverRiding\bin\Debug\39_MethodOverRiding.exe
+C:\Users\bosco\source\repos\BroCode\39_MethodOverRiding\39_MethodOverRiding\bin\Debug\39_MethodOverRiding.pdb
+C:\Users\bosco\source\repos\BroCode\39_MethodOverRiding\39_MethodOverRiding\obj\Debug\39_MethodOverRiding.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\39_MethodOverRiding\39_MethodOverRiding\obj\Debug\39_MethodOverRiding.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\39_MethodOverRiding\39_MethodOverRiding\obj\Debug\39_MethodOverRiding.exe
+C:\Users\bosco\source\repos\BroCode\39_MethodOverRiding\39_MethodOverRiding\obj\Debug\39_MethodOverRiding.pdb

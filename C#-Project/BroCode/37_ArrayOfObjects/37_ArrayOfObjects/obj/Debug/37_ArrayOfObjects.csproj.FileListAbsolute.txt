@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\37_ArrayOfObjects\37_ArrayOfObjects\bin\Debug\37_ArrayOfObjects.exe.config
+C:\Users\bosco\source\repos\BroCode\37_ArrayOfObjects\37_ArrayOfObjects\bin\Debug\37_ArrayOfObjects.exe
+C:\Users\bosco\source\repos\BroCode\37_ArrayOfObjects\37_ArrayOfObjects\bin\Debug\37_ArrayOfObjects.pdb
+C:\Users\bosco\source\repos\BroCode\37_ArrayOfObjects\37_ArrayOfObjects\obj\Debug\37_ArrayOfObjects.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\37_ArrayOfObjects\37_ArrayOfObjects\obj\Debug\37_ArrayOfObjects.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\37_ArrayOfObjects\37_ArrayOfObjects\obj\Debug\37_ArrayOfObjects.exe
+C:\Users\bosco\source\repos\BroCode\37_ArrayOfObjects\37_ArrayOfObjects\obj\Debug\37_ArrayOfObjects.pdb

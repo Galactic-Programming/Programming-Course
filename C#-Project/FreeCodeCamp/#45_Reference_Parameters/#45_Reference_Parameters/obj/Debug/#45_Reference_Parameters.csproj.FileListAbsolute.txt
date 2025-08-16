@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#45_Reference_Parameters\#45_Reference_Parameters\bin\Debug\#45_Reference_Parameters.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#45_Reference_Parameters\#45_Reference_Parameters\bin\Debug\#45_Reference_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#45_Reference_Parameters\#45_Reference_Parameters\bin\Debug\#45_Reference_Parameters.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#45_Reference_Parameters\#45_Reference_Parameters\obj\Debug\#45_Reference_Parameters.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#45_Reference_Parameters\#45_Reference_Parameters\obj\Debug\#45_Reference_Parameters.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#45_Reference_Parameters\#45_Reference_Parameters\obj\Debug\#45_Reference_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#45_Reference_Parameters\#45_Reference_Parameters\obj\Debug\#45_Reference_Parameters.pdb

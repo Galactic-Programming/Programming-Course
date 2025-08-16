@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\2_Variables\2_Variables\bin\Debug\2_Variables.exe.config
+C:\Users\bosco\source\repos\2_Variables\2_Variables\bin\Debug\2_Variables.exe
+C:\Users\bosco\source\repos\2_Variables\2_Variables\bin\Debug\2_Variables.pdb
+C:\Users\bosco\source\repos\2_Variables\2_Variables\obj\Debug\2_Variables.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\2_Variables\2_Variables\obj\Debug\2_Variables.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\2_Variables\2_Variables\obj\Debug\2_Variables.exe
+C:\Users\bosco\source\repos\2_Variables\2_Variables\obj\Debug\2_Variables.pdb

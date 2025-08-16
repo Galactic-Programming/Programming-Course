@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#57_Class_Variable_Function_Scope\#57_Class_Variable_Function_Scope\bin\Debug\#57_Class_Variable_Function_Scope.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#57_Class_Variable_Function_Scope\#57_Class_Variable_Function_Scope\bin\Debug\#57_Class_Variable_Function_Scope.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#57_Class_Variable_Function_Scope\#57_Class_Variable_Function_Scope\bin\Debug\#57_Class_Variable_Function_Scope.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#57_Class_Variable_Function_Scope\#57_Class_Variable_Function_Scope\obj\Debug\#57_Class_Variable_Function_Scope.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#57_Class_Variable_Function_Scope\#57_Class_Variable_Function_Scope\obj\Debug\#57_Class_Variable_Function_Scope.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#57_Class_Variable_Function_Scope\#57_Class_Variable_Function_Scope\obj\Debug\#57_Class_Variable_Function_Scope.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#57_Class_Variable_Function_Scope\#57_Class_Variable_Function_Scope\obj\Debug\#57_Class_Variable_Function_Scope.pdb

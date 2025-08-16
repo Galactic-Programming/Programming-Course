@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#28_Print_String_InReverse\#28_Print_String_InReverse\bin\Debug\#28_Print_String_InReverse.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#28_Print_String_InReverse\#28_Print_String_InReverse\bin\Debug\#28_Print_String_InReverse.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#28_Print_String_InReverse\#28_Print_String_InReverse\bin\Debug\#28_Print_String_InReverse.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#28_Print_String_InReverse\#28_Print_String_InReverse\obj\Debug\#28_Print_String_InReverse.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#28_Print_String_InReverse\#28_Print_String_InReverse\obj\Debug\#28_Print_String_InReverse.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#28_Print_String_InReverse\#28_Print_String_InReverse\obj\Debug\#28_Print_String_InReverse.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#28_Print_String_InReverse\#28_Print_String_InReverse\obj\Debug\#28_Print_String_InReverse.pdb

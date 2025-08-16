@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\#3_ConvertToNumber\#3_ConvertToNumber\bin\Debug\#3_ConvertToNumber.exe.config
+C:\Users\bosco\source\repos\#3_ConvertToNumber\#3_ConvertToNumber\bin\Debug\#3_ConvertToNumber.exe
+C:\Users\bosco\source\repos\#3_ConvertToNumber\#3_ConvertToNumber\bin\Debug\#3_ConvertToNumber.pdb
+C:\Users\bosco\source\repos\#3_ConvertToNumber\#3_ConvertToNumber\obj\Debug\#3_ConvertToNumber.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\#3_ConvertToNumber\#3_ConvertToNumber\obj\Debug\#3_ConvertToNumber.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\#3_ConvertToNumber\#3_ConvertToNumber\obj\Debug\#3_ConvertToNumber.exe
+C:\Users\bosco\source\repos\#3_ConvertToNumber\#3_ConvertToNumber\obj\Debug\#3_ConvertToNumber.pdb

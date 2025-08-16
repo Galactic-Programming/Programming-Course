@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\1_Output\1_Output\bin\Debug\1_Output.exe.config
+C:\Users\bosco\source\repos\1_Output\1_Output\bin\Debug\1_Output.exe
+C:\Users\bosco\source\repos\1_Output\1_Output\bin\Debug\1_Output.pdb
+C:\Users\bosco\source\repos\1_Output\1_Output\obj\Debug\1_Output.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\1_Output\1_Output\obj\Debug\1_Output.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\1_Output\1_Output\obj\Debug\1_Output.exe
+C:\Users\bosco\source\repos\1_Output\1_Output\obj\Debug\1_Output.pdb

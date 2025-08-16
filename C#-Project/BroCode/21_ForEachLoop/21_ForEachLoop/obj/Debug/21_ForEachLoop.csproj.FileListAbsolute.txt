@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\21_ForEachLoop\21_ForEachLoop\bin\Debug\21_ForEachLoop.exe.config
+C:\Users\bosco\source\repos\BroCode\21_ForEachLoop\21_ForEachLoop\bin\Debug\21_ForEachLoop.exe
+C:\Users\bosco\source\repos\BroCode\21_ForEachLoop\21_ForEachLoop\bin\Debug\21_ForEachLoop.pdb
+C:\Users\bosco\source\repos\BroCode\21_ForEachLoop\21_ForEachLoop\obj\Debug\21_ForEachLoop.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\21_ForEachLoop\21_ForEachLoop\obj\Debug\21_ForEachLoop.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\21_ForEachLoop\21_ForEachLoop\obj\Debug\21_ForEachLoop.exe
+C:\Users\bosco\source\repos\BroCode\21_ForEachLoop\21_ForEachLoop\obj\Debug\21_ForEachLoop.pdb

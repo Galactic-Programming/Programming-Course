@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\38_ObjectAsArguments\38_ObjectAsArguments\bin\Debug\38_ObjectAsArguments.exe.config
+C:\Users\bosco\source\repos\BroCode\38_ObjectAsArguments\38_ObjectAsArguments\bin\Debug\38_ObjectAsArguments.exe
+C:\Users\bosco\source\repos\BroCode\38_ObjectAsArguments\38_ObjectAsArguments\bin\Debug\38_ObjectAsArguments.pdb
+C:\Users\bosco\source\repos\BroCode\38_ObjectAsArguments\38_ObjectAsArguments\obj\Debug\38_ObjectAsArguments.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\38_ObjectAsArguments\38_ObjectAsArguments\obj\Debug\38_ObjectAsArguments.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\38_ObjectAsArguments\38_ObjectAsArguments\obj\Debug\38_ObjectAsArguments.exe
+C:\Users\bosco\source\repos\BroCode\38_ObjectAsArguments\38_ObjectAsArguments\obj\Debug\38_ObjectAsArguments.pdb

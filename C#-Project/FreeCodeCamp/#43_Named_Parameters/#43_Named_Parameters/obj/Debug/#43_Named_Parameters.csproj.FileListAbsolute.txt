@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\FreeCodeCamp\#43_Named_Parameters\#43_Named_Parameters\bin\Debug\#43_Named_Parameters.exe.config
+C:\Users\bosco\source\repos\FreeCodeCamp\#43_Named_Parameters\#43_Named_Parameters\bin\Debug\#43_Named_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#43_Named_Parameters\#43_Named_Parameters\bin\Debug\#43_Named_Parameters.pdb
+C:\Users\bosco\source\repos\FreeCodeCamp\#43_Named_Parameters\#43_Named_Parameters\obj\Debug\#43_Named_Parameters.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#43_Named_Parameters\#43_Named_Parameters\obj\Debug\#43_Named_Parameters.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\FreeCodeCamp\#43_Named_Parameters\#43_Named_Parameters\obj\Debug\#43_Named_Parameters.exe
+C:\Users\bosco\source\repos\FreeCodeCamp\#43_Named_Parameters\#43_Named_Parameters\obj\Debug\#43_Named_Parameters.pdb

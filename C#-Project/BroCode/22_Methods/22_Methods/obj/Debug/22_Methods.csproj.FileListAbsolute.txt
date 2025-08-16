@@ -1,0 +1,7 @@
+C:\Users\bosco\source\repos\BroCode\22_Methods\22_Methods\bin\Debug\22_Methods.exe.config
+C:\Users\bosco\source\repos\BroCode\22_Methods\22_Methods\bin\Debug\22_Methods.exe
+C:\Users\bosco\source\repos\BroCode\22_Methods\22_Methods\bin\Debug\22_Methods.pdb
+C:\Users\bosco\source\repos\BroCode\22_Methods\22_Methods\obj\Debug\22_Methods.csproj.AssemblyReference.cache
+C:\Users\bosco\source\repos\BroCode\22_Methods\22_Methods\obj\Debug\22_Methods.csproj.CoreCompileInputs.cache
+C:\Users\bosco\source\repos\BroCode\22_Methods\22_Methods\obj\Debug\22_Methods.exe
+C:\Users\bosco\source\repos\BroCode\22_Methods\22_Methods\obj\Debug\22_Methods.pdb
