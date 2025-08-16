@@ -1,0 +1,74 @@
+/* CSS */
+
+/* Body margin optimization */
+body {
+    margin: 0;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+  }
+  
+  /* Centered page heading */
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #1f2937;
+  }
+  
+  /* Navigation bar styles */
+  .navbar ul {
+    list-style-type: none;
+    background-color: gray;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for navigation links */
+  .navbar a:hover {
+    background-color: aquamarine;
+    transform: translateY(-2px);
+    border-radius: 5px;
+  }
+  
+  /* Align navigation items horizontally */
+  .navbar li {
+    float: left;
+  }
+  
+  /* Clear floats */
+  .navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Main content styling */
+  main {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  main h3 {
+    color: #1e40af;
+  }
+  
+  main p {
+    color: #4b5563;
+    line-height: 1.6;
+  }

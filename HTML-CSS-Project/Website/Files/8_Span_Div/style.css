@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Span-specific Styles */
+  .span-title {
+    background-color: bisque;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .span-highlight {
+    background-color: bisque;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  /* Div-specific Styles */
+  .div-title {
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .div-highlight {
+    background-color: cyan;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  /* Content Section */
+  .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Grammar Information Section */
+  .grammar-info {
+    background-color: #eef6ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grammar-info ul {
+    padding-left: 20px;
+    list-style-type: square;
+  }
+  
+  .text-highlight p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  

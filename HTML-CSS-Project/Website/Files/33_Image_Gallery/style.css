@@ -1,0 +1,51 @@
+/* CSS */
+
+/* Gallery container styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Individual image block */
+  .gallery a {
+    display: block;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+  }
+  
+  /* Image hover effect */
+  .gallery a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Description box */
+  .gallery .description {
+    padding: 12px;
+    text-align: center;
+    background-color: #f3f4f6;
+    color: #333;
+    font-weight: 500;
+    border-top: 1px solid rgb(155, 155, 155);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Description hover effect */
+  .gallery a:hover .description {
+    background-color: #e0f7fa;
+  }
+  

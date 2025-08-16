@@ -1,0 +1,46 @@
+/* CSS */
+
+/* Center align pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style for pagination links */
+  .pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Active page styling */
+  .pagination a.active {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for non-active pages */
+  .pagination a:not(.active):hover {
+    background-color: grey;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Previous/Next buttons */
+  .pagination a:first-child,
+  .pagination a:last-child {
+    font-weight: bold;
+    background-color: #e5e7eb;
+  }
+  
+  .pagination a:first-child:hover,
+  .pagination a:last-child:hover {
+    background-color: #d1d5db;
+  }

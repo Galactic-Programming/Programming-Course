@@ -1,0 +1,78 @@
+/* CSS */
+
+/* Link styles */
+a:link {
+    color: greenyellow;
+    text-decoration: none;
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+  
+  a:hover {
+    color: rgb(169, 109, 225);
+    font-size: 1.1em;
+  }
+  
+  a:active {
+    color: aqua;
+    font-size: 1.1em;
+  }
+  
+  a:visited {
+    color: grey;
+  }
+  
+  /* List item styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: yellow;
+  }
+  
+  li:not(:hover) {
+    background-color: lightgray;
+  }
+  
+  li:nth-child(even) {
+    background-color: darkgray;
+  }
+  
+  /* Greeting box styles */
+  #greeting {
+    background-color: #4ade80;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #greeting:hover {
+    background-color: #22c55e;
+  }
+  
+  #greeting p {
+    background-color: aqua;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #greeting:hover p {
+    display: block;
+  }
+  

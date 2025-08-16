@@ -1,0 +1,49 @@
+/* CSS */
+
+/* Container border */
+#container {
+    border: 2px solid #333;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Direct child paragraphs inside container */
+  #container > p {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* Even child paragraphs inside container */
+  #container > p:nth-child(even) {
+    background-color: lightblue;
+  }
+  
+  /* First child paragraph styling */
+  #container > p:first-child {
+    font-weight: bold;
+  }
+  
+  /* Last child paragraph styling */
+  #container > p:last-child {
+    font-style: italic;
+  }
+  
+  /* General sibling styling */
+  #container ~ p {
+    background-color: rgb(211, 164, 254);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+  }
+  
+  /* Adjacent sibling styling */
+  #container + p {
+    background-color: rgb(164, 254, 194);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  

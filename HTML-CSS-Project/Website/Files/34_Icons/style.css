@@ -1,0 +1,61 @@
+/* CSS */
+
+/* Center icons container */
+.icons {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f3f4f6;
+  }
+  
+  /* Icon link spacing and transition */
+  .icons a {
+    text-decoration: none;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for icons */
+  .icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  /* House user icon */
+  .fa-solid.fa-house-user.fa-5x {
+    color: hsl(0, 0%, 66%);
+    transition: color 0.3s ease;
+  }
+  
+  .fa-solid.fa-house-user.fa-5x:hover {
+    color: hsl(0, 0%, 76%);
+  }
+  
+  /* Laptop code icon */
+  .fa-solid.fa-laptop-code.fa-5x {
+    color: hsla(143, 48%, 64%, 0.87);
+    transition: color 0.3s ease;
+  }
+  
+  .fa-solid.fa-laptop-code.fa-5x:hover {
+    color: hsla(143, 48%, 74%, 0.87);
+  }
+  
+  /* Facebook icon */
+  .fa-brands.fa-square-facebook.fa-5x {
+    color: hsl(240, 72%, 63%);
+    transition: color 0.3s ease;
+  }
+  
+  .fa-brands.fa-square-facebook.fa-5x:hover {
+    color: hsl(240, 72%, 73%);
+  }
+  
+  /* YouTube icon */
+  .fa-brands.fa-youtube.fa-5x {
+    color: hsl(0, 100%, 50%);
+    transition: color 0.3s ease;
+  }
+  
+  .fa-brands.fa-youtube.fa-5x:hover {
+    color: hsl(0, 100%, 60%);
+  }
+  

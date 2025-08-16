@@ -1,0 +1,54 @@
+/* CSS */
+
+/* Container styles for flex layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    border: 10px solid black;
+    padding: 20px;
+    align-content: flex-start;
+    gap: 2em;
+    justify-content: center;
+    background-color: #f3f4f6;
+    border-radius: 20px;
+  }
+  
+  /* Box styles */
+  .box {
+    width: 150px;
+    height: 150px;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for boxes */
+  .box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Box colors */
+  #box1 {
+    background-color: hsl(0, 100%, 70%);
+  }
+  
+  #box2 {
+    background-color: hsl(75, 100%, 70%);
+  }
+  
+  #box3 {
+    background-color: hsl(185, 100%, 70%);
+  }
+  
+  #box4 {
+    background-color: hsl(263, 100%, 70%);
+  }
+  

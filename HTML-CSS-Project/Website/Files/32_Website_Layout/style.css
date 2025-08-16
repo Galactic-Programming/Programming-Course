@@ -1,0 +1,79 @@
+/* CSS */
+
+/* Global box-sizing reset */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Body margin reset */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 25px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: rgb(87, 85, 85);
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 20px;
+  }
+  
+  /* Main content area */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  aside,
+  section,
+  article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside {
+    width: 20%;
+  }
+  
+  section {
+    width: 40%;
+  }
+  
+  article {
+    width: 40%;
+  }
+  
+  /* Footer styling */
+  footer {
+    clear: both;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    aside,
+    section,
+    article {
+      width: 100%;
+    }
+  }
+  

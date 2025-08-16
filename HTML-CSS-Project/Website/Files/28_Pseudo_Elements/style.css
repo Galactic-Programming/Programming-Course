@@ -1,0 +1,53 @@
+/* CSS */
+
+/* Styling the first letter of h1 */
+h1::first-letter {
+    font-size: 2em;
+    font-style: italic;
+    color: #4f46e5;
+  }
+  
+  /* Highlighting the first line of paragraphs */
+  p::first-line {
+    background-color: bisque;
+    font-weight: 500;
+  }
+  
+  /* Custom text selection style */
+  p::selection {
+    color: greenyellow;
+    background-color: rgb(76, 76, 76);
+  }
+  
+  /* List icons for fruits */
+  #fruits li::before {
+    content: "✔️";
+    margin-right: 8px;
+  }
+  
+  /* Adding fruit emojis after list items */
+  #apple::after {
+    content: " 🍎";
+  }
+  
+  #orange::after {
+    content: " 🍊";
+  }
+  
+  #banana::after {
+    content: " 🍌";
+  }
+  
+  /* Highlighted text styles */
+  .highlight {
+    background-color: #fef08a;
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .highlight:hover {
+    background-color: #fde047;
+  }
+  

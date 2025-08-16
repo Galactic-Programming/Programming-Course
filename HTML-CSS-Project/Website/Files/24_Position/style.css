@@ -1,0 +1,62 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f9fafb;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Main container styles */
+  #box1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #93c5fd;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  #box3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #3b82f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #box2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #fca5a5;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Paragraph styles */
+  p {
+    margin-bottom: 10px;
+    color: #374151;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Sticky example for paragraphs */
+  p:nth-child(5) {
+    position: sticky;
+    top: 10px;
+    background-color: #fcd34d;
+  }

@@ -1,0 +1,115 @@
+/* CSS */
+
+/* Body background color */
+body {
+    background-color: rgb(40, 40, 40);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Box styling */
+  #box1 {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 96%, 64%);
+    padding: 10px;
+    margin: 10px;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Glow animation on hover */
+  #box1:hover {
+    animation: glow 2s infinite alternate-reverse, colorChange 5s infinite;
+  }
+  
+  /* Keyframes animations */
+  @keyframes slideLeft {
+    from {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes slideRight {
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes slideDown {
+    to {
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes grow {
+    50% {
+      transform: scale(1.5, 2);
+    }
+  }
+  
+  @keyframes shrink {
+    50% {
+      transform: scale(0.5, 0.5);
+    }
+  }
+  
+  @keyframes fadeIn {
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: hsl(0, 96%, 64%);
+    }
+    20% {
+      background-color: hsl(60, 96%, 64%);
+    }
+    40% {
+      background-color: hsl(120, 96%, 64%);
+    }
+    60% {
+      background-color: hsl(180, 96%, 64%);
+    }
+    80% {
+      background-color: hsl(240, 96%, 64%);
+    }
+    100% {
+      background-color: hsl(300, 96%, 64%);
+    }
+  }
+  
+  @keyframes glow {
+    50% {
+      box-shadow: 0 0 20px 10px yellowgreen;
+    }
+  }
+  

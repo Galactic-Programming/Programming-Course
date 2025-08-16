@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Sentences Section */
+  .sentences {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual Sentence Styles */
+  .sentence {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .first {
+    background-color: #e0f7fa;
+    color: #00695c;
+  }
+  
+  .second {
+    background-color: #ffe0b2;
+    color: #e65100;
+  }
+  
+  .third {
+    background-color: #dcedc8;
+    color: #558b2f;
+  }
+  
+  .fourth {
+    background-color: #f8bbd0;
+    color: #ad1457;
+  }
+  
+  .fifth {
+    background-color: #c5cae9;
+    color: #283593;
+  }
+  
+  /* Hover Effect */
+  .sentence:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .sentences {
+      padding: 15px;
+    }
+  
+    .sentence {
+      font-size: 0.9rem;
+    }
+  }
