@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock Program</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-card">
+        <h1 class="title">Digital Clock</h1>
+        <div class="clock-container">
+          <div id="clock" class="clock-display">00:00:00 AM</div>
+          <div class="date-display" id="date"></div>
+        </div>
+        <div class="controls">
+          <button id="resetButton" class="btn btn-reset">
+            <span>↻</span>
+            Reset
+          </button>
+          <button id="toggleFormatButton" class="btn btn-toggle">
+            <span>⏰</span>
+            Toggle Format
+          </button>
+        </div>
+        <div id="status" class="status-message">
+          Digital Clock Program Loaded
+        </div>
+      </div>
+
+      <!-- Background elements for visual appeal -->
+      <div class="bg-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

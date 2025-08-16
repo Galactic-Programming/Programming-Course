@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Interactive Examples</title>
+    <link rel="stylesheet" href="/62_Add_&_Change_HTML/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🚀 DOM Manipulation Interactive Examples</h1>
+        <p>Learn how to add, modify, and remove HTML elements dynamically!</p>
+      </header>
+
+      <!-- Example 1: H1 Element Demo -->
+      <section class="demo-section">
+        <h2>📝 Example 1: H1 Element Management</h2>
+        <div class="demo-area">
+          <div id="h1-container" class="h1-container">
+            <p class="placeholder">H1 element will appear here...</p>
+          </div>
+          <div class="controls">
+            <button id="create-h1" class="btn btn-primary">Create H1</button>
+            <button id="modify-h1" class="btn btn-secondary" disabled>
+              Modify H1
+            </button>
+            <button id="move-h1" class="btn btn-info" disabled>Move H1</button>
+            <button id="remove-h1" class="btn btn-danger" disabled>
+              Remove H1
+            </button>
+          </div>
+        </div>
+        <div class="boxes-container">
+          <div id="box1" class="box">
+            <h3>Box 1</h3>
+            <p>Target container</p>
+          </div>
+          <div id="box2" class="box">
+            <h3>Box 2</h3>
+            <p>Another container</p>
+          </div>
+          <div id="box3" class="box">
+            <h3>Box 3</h3>
+            <p>Third container</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Example 2: List Item Demo -->
+      <section class="demo-section">
+        <h2>🍎 Example 2: List Item Management</h2>
+        <div class="demo-area">
+          <div class="list-container">
+            <ol id="fruits" class="fruits-list">
+              <li id="apple" class="fruit-item">🍎 Apple</li>
+              <li id="orange" class="fruit-item">🍊 Orange</li>
+              <li id="banana" class="fruit-item">🍌 Banana</li>
+            </ol>
+          </div>
+          <div class="controls">
+            <button id="add-fruit" class="btn btn-success">
+              Add Pineapple
+            </button>
+            <button id="insert-fruit" class="btn btn-info">
+              Insert Before Orange
+            </button>
+            <button id="replace-fruit" class="btn btn-warning">
+              Replace Banana
+            </button>
+            <button id="remove-fruit" class="btn btn-danger">
+              Remove Last Fruit
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code Display Area -->
+      <section class="code-section">
+        <h2>💻 Code Explanation</h2>
+        <div id="code-display" class="code-display">
+          <p>
+            Click on any button above to see the corresponding JavaScript code!
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="/62_Add_&_Change_HTML/index.js"></script>
+  </body>
+</html>

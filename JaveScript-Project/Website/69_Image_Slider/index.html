@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Du Lịch Thế Giới - Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-globe-americas"></i> Du Lịch Thế Giới</h1>
+        <p>Khám phá những điểm đến tuyệt vời nhất hành tinh</p>
+      </header>
+
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide active" data-city="Paris" data-country="Pháp">
+            <img src="images/1.jpg" alt="Paris - Tháp Eiffel" />
+            <div class="slide-content">
+              <h2>Paris</h2>
+              <p>Thành phố ánh sáng với Tháp Eiffel huyền thoại</p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Pháp</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" data-city="Tokyo" data-country="Nhật Bản">
+            <img src="images/2.jpg" alt="Tokyo - Thành phố hiện đại" />
+            <div class="slide-content">
+              <h2>Tokyo</h2>
+              <p>Sự kết hợp hoàn hảo giữa truyền thống và hiện đại</p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nhật Bản</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" data-city="New York" data-country="Mỹ">
+            <img src="images/3.jpg" alt="New York - Thành phố không ngủ" />
+            <div class="slide-content">
+              <h2>New York</h2>
+              <p>Thành phố không bao giờ ngủ với những tòa nhà chọc trời</p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hoa Kỳ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" data-city="London" data-country="Anh">
+            <img src="images/4.jpg" alt="London - Big Ben" />
+            <div class="slide-content">
+              <h2>London</h2>
+              <p>Thủ đô lịch sử với Big Ben và Cung điện Buckingham</p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Vương quốc Anh</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" data-city="Sydney" data-country="Úc">
+            <img src="images/5.jpg" alt="Sydney - Nhà hát Opera" />
+            <div class="slide-content">
+              <h2>Sydney</h2>
+              <p>Thành phố cảng xinh đẹp với Nhà hát Opera nổi tiếng</p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Úc</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" data-city="Rome" data-country="Ý">
+            <img src="images/6.jpg" alt="Rome - Đấu trường La Mã" />
+            <div class="slide-content">
+              <h2>Rome</h2>
+              <p>Thành phố vĩnh cửu với Đấu trường La Mã hùng vĩ</p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ý</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button
+            class="nav-btn prev-btn"
+            onclick="prevSlide()"
+            title="Slide trước"
+            aria-label="Chuyển đến slide trước"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            class="nav-btn next-btn"
+            onclick="nextSlide()"
+            title="Slide tiếp theo"
+            aria-label="Chuyển đến slide tiếp theo"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+          <span class="indicator active" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+          <span class="indicator" onclick="currentSlide(4)"></span>
+          <span class="indicator" onclick="currentSlide(5)"></span>
+          <span class="indicator" onclick="currentSlide(6)"></span>
+        </div>
+
+        <!-- Slide Counter -->
+        <div class="slide-counter">
+          <span id="current-slide">1</span> / <span id="total-slides">6</span>
+        </div>
+
+        <!-- Auto-play Controls -->
+        <div class="controls">
+          <button id="play-pause-btn" onclick="toggleAutoPlay()">
+            <i class="fas fa-pause"></i>
+            <span>Tạm dừng</span>
+          </button>
+          <div class="speed-control">
+            <label for="speed-range">Tốc độ:</label>
+            <input
+              type="range"
+              id="speed-range"
+              min="1000"
+              max="5000"
+              value="3000"
+              onchange="changeSpeed(this.value)"
+            />
+            <span id="speed-value">3s</span>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          💡 <strong>Hướng dẫn:</strong> Sử dụng các nút mũi tên, chấm tròn,
+          hoặc để tự động chuyển slide
+        </p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

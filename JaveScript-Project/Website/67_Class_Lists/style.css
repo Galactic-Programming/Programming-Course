@@ -1,0 +1,31 @@
+#myH1 {
+  font-size: 4rem;
+}
+#myBtn {
+  font-size: 4rem;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.myBtns {
+  font-size: 4rem;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.enabled {
+  background-color: hsl(210, 100%, 59%);
+  color: hsl(0, 0%, 100%);
+}
+.hovered {
+  box-shadow: 0 0 10px hsl(210, 100%, 59%, 0.2);
+  font-weight: bold;
+}
+.disabled {
+  background-color: hsl(0, 0%, 60%);
+  color: hsl(0, 0%, 80%);
+  cursor: not-allowed;
+}

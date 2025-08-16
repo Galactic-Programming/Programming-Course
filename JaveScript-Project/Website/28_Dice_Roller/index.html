@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎲 Dice Roller Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-card">
+        <header class="game-header">
+          <h1 class="title">🎲 Dice Roller</h1>
+          <p class="subtitle">Roll the dice and test your luck!</p>
+        </header>
+
+        <div class="game-controls">
+          <div class="input-group">
+            <label for="numOfDice" class="input-label">Number of dice:</label>
+            <div class="input-wrapper">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                max="10"
+                id="numOfDice"
+                class="dice-input"
+              />
+              <span class="input-hint">1-10</span>
+            </div>
+          </div>
+
+          <button onclick="rollDice()" class="roll-button">
+            <span class="button-icon">🎲</span>
+            <span class="button-text">Roll Dice</span>
+          </button>
+        </div>
+
+        <div class="results-section">
+          <div id="diceResult" class="dice-result"></div>
+          <div id="diceImages" class="dice-images"></div>
+          <div class="stats" id="stats">
+            <div class="stat-item">
+              <span class="stat-label">Total Rolls:</span>
+              <span class="stat-value" id="totalRolls">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Highest Sum:</span>
+              <span class="stat-value" id="highestSum">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background decoration -->
+      <div class="bg-decoration">
+        <div class="floating-dice">🎲</div>
+        <div class="floating-dice">🎲</div>
+        <div class="floating-dice">🎲</div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

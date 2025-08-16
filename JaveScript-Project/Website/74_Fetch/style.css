@@ -1,0 +1,8 @@
+body {
+  font-family: Verdana;
+  font-size: 3em;
+}
+
+#pokemonSprite {
+  display: none;
+}

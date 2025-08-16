@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Stopwatch</title>
+    <link rel="stylesheet" href="/54_Stopwatch_Program/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="background-pattern"></div>
+
+    <div class="main-container">
+      <header class="header">
+        <i class="fas fa-stopwatch"></i>
+        <h1 id="myH1">Professional Stopwatch</h1>
+      </header>
+
+      <div id="container">
+        <div class="stopwatch-frame">
+          <div class="time-labels">
+            <span>H</span>
+            <span>M</span>
+            <span>S</span>
+            <span>MS</span>
+          </div>
+          <div id="display">00:00:00:00</div>
+          <div class="status-indicator">
+            <div class="status-dot" id="statusDot"></div>
+            <span id="statusText">Ready</span>
+          </div>
+        </div>
+
+        <div id="controls">
+          <button id="startBtn" onclick="start()" class="btn btn-start">
+            <i class="fas fa-play"></i>
+            <span>Start</span>
+          </button>
+          <button id="stopBtn" onclick="stop()" class="btn btn-stop">
+            <i class="fas fa-pause"></i>
+            <span>Stop</span>
+          </button>
+          <button id="resetBtn" onclick="reset()" class="btn btn-reset">
+            <i class="fas fa-redo"></i>
+            <span>Reset</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/54_Stopwatch_Program/index.js"></script>
+  </body>
+</html>

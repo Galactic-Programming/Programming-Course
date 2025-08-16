@@ -1,0 +1,24 @@
+body {
+  font-family: Arial;
+  font-size: 2em;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+#mySubmit {
+  font-size: 1em;
+  padding: 5px 15px;
+  background-color: hsl(122, 39%, 49%);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+#mySubmit:hover {
+  background-color: hsl(122, 39%, 40%);
+}
+input {
+  margin: 5px;
+}

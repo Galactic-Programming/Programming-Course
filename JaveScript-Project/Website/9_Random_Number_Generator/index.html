@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎲 Random Number Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="generator-card">
+        <header class="header">
+          <h1 class="title">🎲 Random Number Generator</h1>
+          <p class="subtitle">
+            Generate random numbers within your specified range
+          </p>
+        </header>
+
+        <div class="controls-section">
+          <div class="range-controls">
+            <div class="input-group">
+              <label for="minInput">Minimum:</label>
+              <input
+                type="number"
+                id="minInput"
+                value="1"
+                class="range-input"
+              />
+            </div>
+            <div class="input-group">
+              <label for="maxInput">Maximum:</label>
+              <input
+                type="number"
+                id="maxInput"
+                value="6"
+                class="range-input"
+              />
+            </div>
+          </div>
+
+          <div class="count-control">
+            <label for="countInput">Count:</label>
+            <input
+              type="number"
+              id="countInput"
+              value="3"
+              min="1"
+              max="10"
+              class="count-input"
+            />
+          </div>
+
+          <button id="generateButton" class="generate-button">
+            <span class="button-icon">🎲</span>
+            <span class="button-text">Generate Numbers</span>
+          </button>
+        </div>
+
+        <div class="results-section">
+          <div class="numbers-display" id="numbersDisplay">
+            <div class="placeholder">Click "Generate Numbers" to start!</div>
+          </div>
+
+          <div class="stats" id="stats">
+            <div class="stat-item">
+              <span class="stat-label">Sum:</span>
+              <span class="stat-value" id="sumValue">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Average:</span>
+              <span class="stat-value" id="avgValue">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Generations:</span>
+              <span class="stat-value" id="genCount">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button onclick="copyNumbers()" class="action-button">
+            <span>📋</span>
+            Copy
+          </button>
+          <button onclick="clearResults()" class="action-button">
+            <span>🗑️</span>
+            Clear
+          </button>
+        </div>
+      </div>
+
+      <!-- Background animation -->
+      <div class="bg-animation">
+        <div class="floating-number">1</div>
+        <div class="floating-number">2</div>
+        <div class="floating-number">3</div>
+        <div class="floating-number">4</div>
+        <div class="floating-number">5</div>
+        <div class="floating-number">6</div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

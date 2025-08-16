@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide & Show Demo</title>
+    <link rel="stylesheet" href="/65_Hide_&_Show_HTML/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🎭 Hide & Show Demo</h1>
+        <p>Click the button below to toggle the image visibility</p>
+      </header>
+
+      <div class="control-section">
+        <button id="myBtn" class="toggle-btn">
+          <span class="icon">👁️</span>
+          <span class="text">Hide</span>
+        </button>
+      </div>
+
+      <div class="image-section">
+        <div class="image-container">
+          <img
+            src="/65_Hide_&_Show_HTML/Zephyrus G14_1920x1080.jpg"
+            alt="Laptop Image"
+            id="myImage"
+          />
+          <div class="image-placeholder">
+            <div class="placeholder-content">
+              <span class="placeholder-icon">🖼️</span>
+              <p>Image is hidden</p>
+              <small>Click "Show" to reveal the image</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/65_Hide_&_Show_HTML/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Navigation Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>DOM Navigation Tutorial</h1>
+        <p>Learn how to navigate through HTML elements using JavaScript</p>
+      </header>
+
+      <main>
+        <div class="explanation">
+          <h2>DOM Navigation Methods</h2>
+          <div class="methods-grid">
+            <div class="method-card">
+              <h3>firstElementChild</h3>
+              <p>Returns the first child element</p>
+            </div>
+            <div class="method-card">
+              <h3>lastElementChild</h3>
+              <p>Returns the last child element</p>
+            </div>
+            <div class="method-card">
+              <h3>nextElementSibling</h3>
+              <p>Returns the next sibling element</p>
+            </div>
+            <div class="method-card">
+              <h3>previousElementSibling</h3>
+              <p>Returns the previous sibling element</p>
+            </div>
+            <div class="method-card">
+              <h3>parentElement</h3>
+              <p>Returns the parent element</p>
+            </div>
+            <div class="method-card">
+              <h3>children</h3>
+              <p>Returns all child elements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-section">
+          <h2>Live Demo</h2>
+          <div class="demo-content">
+            <div class="food-category">
+              <h3>🍎 Fruits</h3>
+              <ul id="fruits" class="food-list">
+                <li id="apple" class="food-item">🍎 Apple</li>
+                <li id="orange" class="food-item">🍊 Orange</li>
+                <li id="banana" class="food-item">🍌 Banana</li>
+              </ul>
+            </div>
+
+            <div class="food-category">
+              <h3>🥕 Vegetables</h3>
+              <ul id="vegetables" class="food-list">
+                <li id="carrot" class="food-item">🥕 Carrot</li>
+                <li id="broccoli" class="food-item">🥦 Broccoli</li>
+                <li id="corn" class="food-item">🌽 Corn</li>
+              </ul>
+            </div>
+
+            <div class="food-category">
+              <h3>🍰 Desserts</h3>
+              <ul id="desserts" class="food-list">
+                <li id="cake" class="food-item">🍰 Cake</li>
+                <li id="ice-cream" class="food-item">🍦 Ice Cream</li>
+                <li id="pudding" class="food-item">🍮 Pudding</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="resetBtn" class="btn">Reset All Styles</button>
+          <button id="demoBtn" class="btn btn-primary">Run Demo</button>
+        </div>
+
+        <div class="legend">
+          <h3>Color Legend</h3>
+          <div class="legend-items">
+            <div class="legend-item">
+              <span class="color-box first-child"></span>
+              <span>First Child</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-box last-child"></span>
+              <span>Last Child</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-box next-sibling"></span>
+              <span>Next Sibling</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-box previous-sibling"></span>
+              <span>Previous Sibling</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-box parent-element"></span>
+              <span>Parent Element</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-box all-children"></span>
+              <span>All Children</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

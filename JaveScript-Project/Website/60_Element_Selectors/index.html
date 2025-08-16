@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Selectors Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="main-title">Element Selectors Demo</h1>
+        <p id="subtitle">Learn different ways to select HTML elements</p>
+      </header>
+
+      <main>
+        <!-- Section 1: getElementById demo -->
+        <section class="demo-section">
+          <h2>1. getElementById</h2>
+          <p>Selects a single element by its unique ID</p>
+          <div id="unique-element">This element has ID "unique-element"</div>
+        </section>
+
+        <!-- Section 2: getElementsByClassName demo -->
+        <section class="demo-section">
+          <h2>2. getElementsByClassName</h2>
+          <p>Selects all elements with the same class name</p>
+          <div class="fruits">🍎 Apple</div>
+          <div class="fruits">🍊 Orange</div>
+          <div class="fruits">🍌 Banana</div>
+          <div class="fruits">🥝 Kiwi</div>
+        </section>
+
+        <!-- Section 3: getElementsByTagName demo -->
+        <section class="demo-section">
+          <h2>3. getElementsByTagName</h2>
+          <p>Selects all elements with the same tag name</p>
+          <h3>Vegetables</h3>
+          <ul>
+            <li>🥕 Carrot</li>
+            <li>🥬 Lettuce</li>
+            <li>🥒 Cucumber</li>
+          </ul>
+          <h3>Beverages</h3>
+          <ul>
+            <li>☕ Coffee</li>
+            <li>🥤 Soda</li>
+            <li>🧃 Juice</li>
+          </ul>
+        </section>
+
+        <!-- Section 4: querySelector demo -->
+        <section class="demo-section">
+          <h2>4. querySelector</h2>
+          <p>Selects the FIRST element that matches a CSS selector</p>
+          <div class="special-item">First special item</div>
+          <div class="special-item">Second special item</div>
+          <p class="note">Only the first element will be selected</p>
+        </section>
+
+        <!-- Section 5: querySelectorAll demo -->
+        <section class="demo-section">
+          <h2>5. querySelectorAll</h2>
+          <p>Selects ALL elements that match a CSS selector</p>
+          <button class="btn">Button 1</button>
+          <button class="btn">Button 2</button>
+          <button class="btn">Button 3</button>
+          <button class="btn">Button 4</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

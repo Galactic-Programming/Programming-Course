@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Demo - Ứng dụng thời tiết</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1><i class="fas fa-cloud-sun"></i> Weather App Demo</h1>
+        <p>Demo với dữ liệu mẫu - không cần API key</p>
+      </header>
+
+      <div class="search-section">
+        <form class="weatherForm">
+          <div class="input-group">
+            <input
+              type="text"
+              class="cityInput"
+              placeholder="Thử nhập: Hanoi, Ho Chi Minh, Da Nang..."
+            />
+            <button type="submit" class="search-btn" title="Tìm kiếm thời tiết">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="recent-searches">
+          <h3>Tìm kiếm gần đây:</h3>
+          <div class="search-history"></div>
+        </div>
+      </div>
+
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Đang tải dữ liệu thời tiết...</p>
+      </div>
+
+      <div class="card">
+        <div class="weather-header">
+          <div class="location-info">
+            <h2 class="cityDisplay"></h2>
+            <p class="date-time"></p>
+          </div>
+          <div class="temp-toggle">
+            <button class="temp-unit active" data-unit="celsius">°C</button>
+            <button class="temp-unit" data-unit="fahrenheit">°F</button>
+          </div>
+        </div>
+
+        <div class="main-weather">
+          <div class="temperature-section">
+            <div class="temp-display">
+              <span class="tempDisplay"></span>
+              <span class="feels-like"></span>
+            </div>
+            <div class="weather-icon">
+              <span class="weatherEmoji"></span>
+            </div>
+          </div>
+          <p class="descDisplay"></p>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail-item">
+            <i class="fas fa-tint"></i>
+            <div>
+              <span class="label">Độ ẩm</span>
+              <span class="humidityDisplay"></span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-wind"></i>
+            <div>
+              <span class="label">Tốc độ gió</span>
+              <span class="windDisplay"></span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-thermometer-half"></i>
+            <div>
+              <span class="label">Áp suất</span>
+              <span class="pressureDisplay"></span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-eye"></i>
+            <div>
+              <span class="label">Tầm nhìn</span>
+              <span class="visibilityDisplay"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p class="errorDisplay"></p>
+      </div>
+    </div>
+
+    <script src="demo.js"></script>
+  </body>
+</html>

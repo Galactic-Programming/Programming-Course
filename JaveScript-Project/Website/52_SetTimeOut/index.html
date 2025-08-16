@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript SetTimeout Examples</title>
+    <link rel="stylesheet" href="/52_SetTimeOut/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript setTimeout Examples</h1>
+
+      <!-- Basic Timer Section -->
+      <div class="section">
+        <h2>Basic Timer (3 seconds)</h2>
+        <div class="button-group">
+          <button class="btn btn-start" onclick="startTimer()">
+            <span class="icon">▶️</span>
+            Start Timer
+          </button>
+          <button class="btn btn-clear" onclick="clearTimer()">
+            <span class="icon">⏹️</span>
+            Clear Timer
+          </button>
+        </div>
+      </div>
+
+      <!-- Countdown Section -->
+      <div class="section">
+        <h2>Countdown Timer</h2>
+        <div class="countdown-display" id="countdownDisplay">10</div>
+        <div class="button-group">
+          <button class="btn btn-countdown" onclick="startCountdown()">
+            <span class="icon">⏱️</span>
+            Start Countdown
+          </button>
+          <button class="btn btn-stop" onclick="stopCountdown()">
+            <span class="icon">⏸️</span>
+            Stop Countdown
+          </button>
+        </div>
+      </div>
+
+      <!-- Multiple Timers Section -->
+      <div class="section">
+        <h2>Multiple Timers</h2>
+        <div class="button-group">
+          <button class="btn btn-quick" onclick="quickAlert()">
+            <span class="icon">⚡</span>
+            Quick (1s)
+          </button>
+          <button class="btn btn-medium" onclick="mediumAlert()">
+            <span class="icon">⏰</span>
+            Medium (5s)
+          </button>
+          <button class="btn btn-slow" onclick="slowAlert()">
+            <span class="icon">🐌</span>
+            Slow (10s)
+          </button>
+        </div>
+      </div>
+
+      <!-- Status Display -->
+      <div class="status-section">
+        <h3>Status Messages:</h3>
+        <div class="status-display" id="statusDisplay">
+          Ready to start timers...
+        </div>
+      </div>
+    </div>
+
+    <script src="/52_SetTimeOut/index.js"></script>
+  </body>
+</html>
